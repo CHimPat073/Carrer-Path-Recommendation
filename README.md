@@ -1,11 +1,11 @@
-#🤖 Career Path Recommendation System
+🤖 Career Path Recommendation System
 
 An interactive web application that leverages a machine learning model to suggest suitable career paths based on an individual's skills and interests. The project provides transparent and explainable predictions using SHAP (SHapley Additive exPlanations).
 
 📋 Table of Contents
 About The Project
 
-##✨ Features
+✨ Features
 
 🚀 Getting Started
 
@@ -15,7 +15,7 @@ Installation
 
 🛠️ Built With
 
-##📈 Model Development
+📈 Model Development
 
 
 About The Project
@@ -23,7 +23,7 @@ Choosing a career path can be a daunting task. This project aims to simplify the
 
 The user interacts with a simple web interface built with Streamlit, where they can rate their proficiency across 17 different technical and soft skills. The model then predicts the most suitable career path and, most importantly, explains why it made that decision by showing which skills had the most positive and negative impact on the outcome.
 
-##✨ Features
+✨ Features
 Interactive Skill Assessment: User-friendly interface with sliders and dropdowns to input skill levels.
 
 ML-Powered Predictions: Employs a trained Scikit-learn model to predict the best-suited career role.
@@ -34,7 +34,7 @@ Personalized Prediction Explanations: Utilizes SHAP to visualize the impact of e
 
 Overall Skill Importance: Displays a global SHAP summary plot to show which skills are the most important across all predictions.
 
-##🚀 Getting Started
+🚀 Getting Started
 To get a local copy up and running, follow these simple steps.
 
 Prerequisites
@@ -90,7 +90,7 @@ Bash
 streamlit run app.py
 Open your browser and navigate to the local URL provided by Streamlit (usually http://localhost:8501).
 
-#🛠️ Built With
+🛠️ Built With
 
 Python: Core programming language.
 
@@ -104,7 +104,7 @@ Pandas: For data manipulation and processing.
 
 Joblib: For saving and loading the trained model.
 
-#📈 Model Development
+📈 Model Development
 
 The predictive model was developed in the GroupActivity.ipynb Jupyter Notebook. The key steps included:
 
