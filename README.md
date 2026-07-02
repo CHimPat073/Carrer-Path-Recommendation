@@ -118,4 +118,3 @@ Evaluation: The final model was evaluated based on its accuracy score and a deta
 
 Serialization: The tuned Random Forest model and the label encoder were saved to .pkl files using joblib for use in the Streamlit application.
 
-📸 Demo Screenshot
