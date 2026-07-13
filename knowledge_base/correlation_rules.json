@@ -1,0 +1,155 @@
+{
+  "correlation_rules": {
+    "description": "Realistic feature correlation rules for career profile generation and scoring.",
+    "rules": [
+      {
+        "feature_pair": ["Machine Learning", "Python"],
+        "relationship": "strong_positive",
+        "strength": 0.9,
+        "note": "Machine Learning strongly correlates with Python proficiency."
+      },
+      {
+        "feature_pair": ["Deep Learning", "Machine Learning"],
+        "relationship": "strong_positive",
+        "strength": 0.88,
+        "note": "Deep Learning depends heavily on Machine Learning foundations."
+      },
+      {
+        "feature_pair": ["Leadership", "Years Experience"],
+        "relationship": "positive",
+        "strength": 0.84,
+        "note": "Leadership increases with experience."
+      },
+      {
+        "feature_pair": ["Projects Completed", "Years Experience"],
+        "relationship": "strong_positive",
+        "strength": 0.91,
+        "note": "Projects completed increase with experience."
+      },
+      {
+        "feature_pair": ["Communication", "Years Experience"],
+        "relationship": "moderate_positive",
+        "strength": 0.72,
+        "note": "Communication increases slightly with seniority."
+      },
+      {
+        "feature_pair": ["Research", "AI careers"],
+        "relationship": "strong_positive",
+        "strength": 0.87,
+        "note": "Research correlates strongly with AI-related careers."
+      },
+      {
+        "feature_pair": ["Cloud", "DevOps"],
+        "relationship": "positive",
+        "strength": 0.8,
+        "note": "Cloud and DevOps skills often grow together."
+      },
+      {
+        "feature_pair": ["Cybersecurity", "Networking"],
+        "relationship": "positive",
+        "strength": 0.78,
+        "note": "Cybersecurity and networking often reinforce each other."
+      },
+      {
+        "feature_pair": ["UI Design", "UX Research"],
+        "relationship": "positive",
+        "strength": 0.82,
+        "note": "Design and research skills tend to develop together."
+      },
+      {
+        "feature_pair": ["Product Management", "Business Analysis"],
+        "relationship": "positive",
+        "strength": 0.79,
+        "note": "Product and business roles commonly overlap in analysis and planning."
+      },
+      {
+        "feature_pair": ["Testing", "Software Engineering"],
+        "relationship": "positive",
+        "strength": 0.76,
+        "note": "Testing maturity usually rises with engineering experience."
+      },
+      {
+        "feature_pair": ["Database", "SQL"],
+        "relationship": "strong_positive",
+        "strength": 0.9,
+        "note": "Database competence strongly aligns with SQL proficiency."
+      },
+      {
+        "feature_pair": ["Mobile Development", "UI Design"],
+        "relationship": "positive",
+        "strength": 0.74,
+        "note": "Mobile development often overlaps with strong interface design skills."
+      },
+      {
+        "feature_pair": ["Game Development", "Programming"],
+        "relationship": "strong_positive",
+        "strength": 0.85,
+        "note": "Game development requires strong programming fundamentals."
+      },
+      {
+        "feature_pair": ["Problem Solving", "Years Experience"],
+        "relationship": "positive",
+        "strength": 0.76,
+        "note": "Problem-solving maturity improves with experience."
+      }
+    ],
+    "career_specific_rules": [
+      {
+        "career": "ML Engineer",
+        "rules": [
+          ["Machine Learning", "Python", "strong_positive"],
+          ["Deep Learning", "Machine Learning", "strong_positive"],
+          ["Research", "Years Experience", "positive"]
+        ]
+      },
+      {
+        "career": "Data Scientist",
+        "rules": [
+          ["Machine Learning", "Python", "strong_positive"],
+          ["Data Analysis", "SQL", "positive"],
+          ["Research", "Years Experience", "positive"]
+        ]
+      },
+      {
+        "career": "Backend Developer",
+        "rules": [
+          ["Database", "SQL", "strong_positive"],
+          ["Problem Solving", "Years Experience", "positive"],
+          ["Cloud", "DevOps", "positive"]
+        ]
+      },
+      {
+        "career": "Frontend Developer",
+        "rules": [
+          ["JavaScript", "UI Design", "positive"],
+          ["Communication", "Years Experience", "positive"],
+          ["UX Research", "UI Design", "positive"]
+        ]
+      },
+      {
+        "career": "Product Manager",
+        "rules": [
+          ["Communication", "Years Experience", "positive"],
+          ["Leadership", "Years Experience", "positive"],
+          ["Business Analysis", "Product Management", "strong_positive"]
+        ]
+      },
+      {
+        "career": "Cloud Engineer",
+        "rules": [
+          ["Cloud", "DevOps", "strong_positive"],
+          ["Networking", "Cloud", "positive"],
+          ["Problem Solving", "Years Experience", "positive"]
+        ]
+      },
+      {
+        "career": "UI/UX Designer",
+        "rules": [
+          ["UI Design", "UX Research", "strong_positive"],
+          ["Communication", "Years Experience", "positive"],
+          ["Research", "UI Design", "positive"]
+        ]
+      }
+    ]
+  }
+}

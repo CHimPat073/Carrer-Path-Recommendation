@@ -1,0 +1,258 @@
+{
+  "career_similarity_matrix": [
+    {
+      "career": "Software Engineer",
+      "similar_careers": [
+        {"career": "Backend Developer", "similarity_percentage": 82},
+        {"career": "Full Stack Developer", "similarity_percentage": 78},
+        {"career": "DevOps Engineer", "similarity_percentage": 56},
+        {"career": "QA Engineer", "similarity_percentage": 54}
+      ]
+    },
+    {
+      "career": "Backend Developer",
+      "similar_careers": [
+        {"career": "Software Engineer", "similarity_percentage": 82},
+        {"career": "Data Engineer", "similarity_percentage": 74},
+        {"career": "Full Stack Developer", "similarity_percentage": 71},
+        {"career": "DevOps Engineer", "similarity_percentage": 58}
+      ]
+    },
+    {
+      "career": "Frontend Developer",
+      "similar_careers": [
+        {"career": "Full Stack Developer", "similarity_percentage": 76},
+        {"career": "UI/UX Designer", "similarity_percentage": 72},
+        {"career": "Mobile App Developer", "similarity_percentage": 69},
+        {"career": "Software Engineer", "similarity_percentage": 55}
+      ]
+    },
+    {
+      "career": "Full Stack Developer",
+      "similar_careers": [
+        {"career": "Software Engineer", "similarity_percentage": 78},
+        {"career": "Backend Developer", "similarity_percentage": 71},
+        {"career": "Frontend Developer", "similarity_percentage": 76},
+        {"career": "DevOps Engineer", "similarity_percentage": 60}
+      ]
+    },
+    {
+      "career": "Mobile App Developer",
+      "similar_careers": [
+        {"career": "Frontend Developer", "similarity_percentage": 69},
+        {"career": "UI/UX Designer", "similarity_percentage": 66},
+        {"career": "Game Developer", "similarity_percentage": 63},
+        {"career": "Software Engineer", "similarity_percentage": 49}
+      ]
+    },
+    {
+      "career": "Data Scientist",
+      "similar_careers": [
+        {"career": "ML Engineer", "similarity_percentage": 92},
+        {"career": "Data Engineer", "similarity_percentage": 78},
+        {"career": "AI Research Engineer", "similarity_percentage": 74},
+        {"career": "Business Analyst", "similarity_percentage": 62}
+      ]
+    },
+    {
+      "career": "ML Engineer",
+      "similar_careers": [
+        {"career": "Data Scientist", "similarity_percentage": 92},
+        {"career": "AI Research Engineer", "similarity_percentage": 88},
+        {"career": "Data Engineer", "similarity_percentage": 75},
+        {"career": "Cloud Engineer", "similarity_percentage": 65}
+      ]
+    },
+    {
+      "career": "Data Engineer",
+      "similar_careers": [
+        {"career": "Backend Developer", "similarity_percentage": 74},
+        {"career": "Data Scientist", "similarity_percentage": 78},
+        {"career": "ML Engineer", "similarity_percentage": 75},
+        {"career": "Database Administrator", "similarity_percentage": 72}
+      ]
+    },
+    {
+      "career": "AI Research Engineer",
+      "similar_careers": [
+        {"career": "ML Engineer", "similarity_percentage": 88},
+        {"career": "Data Scientist", "similarity_percentage": 74},
+        {"career": "Data Engineer", "similarity_percentage": 59},
+        {"career": "Software Engineer", "similarity_percentage": 48}
+      ]
+    },
+    {
+      "career": "DevOps Engineer",
+      "similar_careers": [
+        {"career": "Cloud Engineer", "similarity_percentage": 84},
+        {"career": "Backend Developer", "similarity_percentage": 58},
+        {"career": "Software Engineer", "similarity_percentage": 56},
+        {"career": "Database Administrator", "similarity_percentage": 54}
+      ]
+    },
+    {
+      "career": "Cloud Engineer",
+      "similar_careers": [
+        {"career": "DevOps Engineer", "similarity_percentage": 84},
+        {"career": "ML Engineer", "similarity_percentage": 65},
+        {"career": "Backend Developer", "similarity_percentage": 57},
+        {"career": "Network Engineer", "similarity_percentage": 60}
+      ]
+    },
+    {
+      "career": "Cyber Security Analyst",
+      "similar_careers": [
+        {"career": "Ethical Hacker", "similarity_percentage": 86},
+        {"career": "Network Engineer", "similarity_percentage": 71},
+        {"career": "DevOps Engineer", "similarity_percentage": 57},
+        {"career": "Database Administrator", "similarity_percentage": 55}
+      ]
+    },
+    {
+      "career": "Ethical Hacker",
+      "similar_careers": [
+        {"career": "Cyber Security Analyst", "similarity_percentage": 86},
+        {"career": "Network Engineer", "similarity_percentage": 73},
+        {"career": "Cloud Engineer", "similarity_percentage": 54},
+        {"career": "Software Engineer", "similarity_percentage": 46}
+      ]
+    },
+    {
+      "career": "Network Engineer",
+      "similar_careers": [
+        {"career": "Cloud Engineer", "similarity_percentage": 60},
+        {"career": "Cyber Security Analyst", "similarity_percentage": 71},
+        {"career": "DevOps Engineer", "similarity_percentage": 55},
+        {"career": "Database Administrator", "similarity_percentage": 58}
+      ]
+    },
+    {
+      "career": "UI/UX Designer",
+      "similar_careers": [
+        {"career": "Frontend Developer", "similarity_percentage": 72},
+        {"career": "Mobile App Developer", "similarity_percentage": 66},
+        {"career": "Product Manager", "similarity_percentage": 61},
+        {"career": "Business Analyst", "similarity_percentage": 58}
+      ]
+    },
+    {
+      "career": "Product Manager",
+      "similar_careers": [
+        {"career": "Business Analyst", "similarity_percentage": 75},
+        {"career": "UI/UX Designer", "similarity_percentage": 61},
+        {"career": "Software Engineer", "similarity_percentage": 49},
+        {"career": "Frontend Developer", "similarity_percentage": 47}
+      ]
+    },
+    {
+      "career": "Business Analyst",
+      "similar_careers": [
+        {"career": "Product Manager", "similarity_percentage": 75},
+        {"career": "UI/UX Designer", "similarity_percentage": 58},
+        {"career": "Data Scientist", "similarity_percentage": 62},
+        {"career": "QA Engineer", "similarity_percentage": 51}
+      ]
+    },
+    {
+      "career": "QA Engineer",
+      "similar_careers": [
+        {"career": "Software Engineer", "similarity_percentage": 54},
+        {"career": "Business Analyst", "similarity_percentage": 51},
+        {"career": "Backend Developer", "similarity_percentage": 47},
+        {"career": "Product Manager", "similarity_percentage": 43}
+      ]
+    },
+    {
+      "career": "Database Administrator",
+      "similar_careers": [
+        {"career": "Data Engineer", "similarity_percentage": 72},
+        {"career": "Backend Developer", "similarity_percentage": 63},
+        {"career": "Network Engineer", "similarity_percentage": 58},
+        {"career": "DevOps Engineer", "similarity_percentage": 54}
+      ]
+    },
+    {
+      "career": "Game Developer",
+      "similar_careers": [
+        {"career": "Mobile App Developer", "similarity_percentage": 63},
+        {"career": "Frontend Developer", "similarity_percentage": 56},
+        {"career": "Software Engineer", "similarity_percentage": 46},
+        {"career": "UI/UX Designer", "similarity_percentage": 44}
+      ]
+    }
+  ],
+  "synthetic_data_overlap_rules": {
+    "description": "Rules for generating synthetic career profiles by blending feature values from similar careers.",
+    "default_similarity_threshold": 40,
+    "max_neighbor_count": 4,
+    "blending_strategy": {
+      "high_similarity_weight": 0.7,
+      "medium_similarity_weight": 0.45,
+      "low_similarity_weight": 0.2,
+      "career_specific_bias": 0.15
+    },
+    "feature_blending_rules": {
+      "core_technical_features": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "SQL",
+        "Cloud",
+        "DevOps",
+        "Database"
+      ],
+      "domain_specific_features": [
+        "Machine Learning",
+        "Deep Learning",
+        "Cybersecurity",
+        "Mobile Development",
+        "Game Development",
+        "UI Design",
+        "UX Research",
+        "Product Management",
+        "Business Analysis"
+      ],
+      "soft_skill_boost": [
+        "Communication",
+        "Leadership",
+        "Problem Solving",
+        "Teamwork",
+        "Research",
+        "Agile"
+      ]
+    },
+    "career_family_rules": [
+      {
+        "family": "software_engineering",
+        "careers": ["Software Engineer", "Backend Developer", "Frontend Developer", "Full Stack Developer", "QA Engineer"],
+        "shared_feature_shift": 0.15,
+        "allowed_similarity_range": [50, 85]
+      },
+      {
+        "family": "data_ai",
+        "careers": ["Data Scientist", "ML Engineer", "Data Engineer", "AI Research Engineer", "Business Analyst"],
+        "shared_feature_shift": 0.2,
+        "allowed_similarity_range": [60, 95]
+      },
+      {
+        "family": "platform_infra",
+        "careers": ["DevOps Engineer", "Cloud Engineer", "Network Engineer", "Database Administrator", "Cyber Security Analyst"],
+        "shared_feature_shift": 0.18,
+        "allowed_similarity_range": [50, 90]
+      },
+      {
+        "family": "product_design",
+        "careers": ["UI/UX Designer", "Mobile App Developer", "Game Developer", "Product Manager", "Frontend Developer"],
+        "shared_feature_shift": 0.16,
+        "allowed_similarity_range": [45, 80]
+      }
+    ],
+    "generation_constraints": {
+      "preserve_primary_domain": true,
+      "max_feature_drift": 1.5,
+      "minimum_core_skill_floor": 3,
+      "domain_specific_feature_guardrail": true,
+      "soft_skill_alignment": true
+    }
+  }
+}

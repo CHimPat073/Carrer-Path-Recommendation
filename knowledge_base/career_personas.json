@@ -1,0 +1,724 @@
+{
+  "career_personas": [
+    {
+      "career": "Software Engineer",
+      "description": "Builds reliable software applications by designing, coding, testing, and maintaining scalable systems across products and platforms.",
+      "required_technical_skills": [
+        "Programming fundamentals",
+        "Data structures and algorithms",
+        "Version control (Git)",
+        "Software design and debugging",
+        "Testing and code quality"
+      ],
+      "nice_to_have_technical_skills": [
+        "Cloud platforms",
+        "Containerization",
+        "CI/CD pipelines",
+        "Microservices"
+      ],
+      "required_soft_skills": [
+        "Problem solving",
+        "Communication",
+        "Team collaboration",
+        "Adaptability"
+      ],
+      "typical_education": "Bachelor's degree in Computer Science, Software Engineering, or a related field",
+      "experience_level": "Entry to senior",
+      "preferred_work_style": "Structured, collaborative, and iterative with strong documentation and code reviews",
+      "typical_industries": [
+        "Technology",
+        "Fintech",
+        "Healthcare",
+        "E-commerce"
+      ],
+      "salary_band": "$85k-$160k USD",
+      "career_growth": "Junior Engineer -> Senior Engineer -> Staff Engineer -> Engineering Manager or Architect",
+      "future_demand": "Very high",
+      "difficulty_level": "Moderate to high"
+    },
+    {
+      "career": "Backend Developer",
+      "description": "Designs and maintains server-side logic, databases, APIs, and business rules that power applications and services.",
+      "required_technical_skills": [
+        "Backend programming languages",
+        "RESTful APIs",
+        "Databases and SQL",
+        "Authentication and authorization",
+        "Server-side architecture"
+      ],
+      "nice_to_have_technical_skills": [
+        "Distributed systems",
+        "Caching",
+        "Message queues",
+        "GraphQL"
+      ],
+      "required_soft_skills": [
+        "Analytical thinking",
+        "Attention to detail",
+        "Debugging mindset",
+        "Cross-team communication"
+      ],
+      "typical_education": "Bachelor's degree in Computer Science or related field",
+      "experience_level": "Entry to senior",
+      "preferred_work_style": "Systematic, performance-focused, and service-oriented",
+      "typical_industries": [
+        "Fintech",
+        "Enterprise software",
+        "Gaming",
+        "Logistics"
+      ],
+      "salary_band": "$90k-$180k USD",
+      "career_growth": "Backend Developer -> Senior Backend Developer -> Tech Lead -> Principal Engineer",
+      "future_demand": "Very high",
+      "difficulty_level": "High"
+    },
+    {
+      "career": "Frontend Developer",
+      "description": "Creates the user-facing parts of applications, ensuring responsive interfaces, polished interactions, and strong usability.",
+      "required_technical_skills": [
+        "HTML",
+        "CSS",
+        "JavaScript or TypeScript",
+        "Frontend frameworks",
+        "Responsive design"
+      ],
+      "nice_to_have_technical_skills": [
+        "Accessibility",
+        "Testing libraries",
+        "State management",
+        "Web performance optimization"
+      ],
+      "required_soft_skills": [
+        "Creativity",
+        "User empathy",
+        "Attention to detail",
+        "Collaboration"
+      ],
+      "typical_education": "Bachelor's degree in Computer Science, HCI, or related discipline",
+      "experience_level": "Entry to senior",
+      "preferred_work_style": "Visual, interactive, and highly collaborative with design teams",
+      "typical_industries": [
+        "SaaS",
+        "Media",
+        "E-commerce",
+        "Education"
+      ],
+      "salary_band": "$80k-$150k USD",
+      "career_growth": "Frontend Developer -> Senior Frontend Developer -> Frontend Architect -> UI Engineering Lead",
+      "future_demand": "High",
+      "difficulty_level": "Moderate"
+    },
+    {
+      "career": "Full Stack Developer",
+      "description": "Works across both frontend and backend layers, building complete features and end-to-end product experiences.",
+      "required_technical_skills": [
+        "Frontend technologies",
+        "Backend technologies",
+        "Databases",
+        "API integration",
+        "Deployment basics"
+      ],
+      "nice_to_have_technical_skills": [
+        "DevOps practices",
+        "Cloud services",
+        "Testing automation",
+        "System design"
+      ],
+      "required_soft_skills": [
+        "Versatility",
+        "Ownership",
+        "Problem solving",
+        "Prioritization"
+      ],
+      "typical_education": "Bachelor's degree in Computer Science or related field",
+      "experience_level": "Mid to senior",
+      "preferred_work_style": "Fast-moving, cross-functional, and product-oriented",
+      "typical_industries": [
+        "Startups",
+        "Product companies",
+        "Digital agencies",
+        "EdTech"
+      ],
+      "salary_band": "$95k-$170k USD",
+      "career_growth": "Full Stack Developer -> Senior Full Stack Developer -> Tech Lead -> Engineering Manager",
+      "future_demand": "High",
+      "difficulty_level": "High"
+    },
+    {
+      "career": "Mobile App Developer",
+      "description": "Builds mobile applications for iOS and Android, focusing on performance, usability, and platform-specific constraints.",
+      "required_technical_skills": [
+        "Mobile app development",
+        "Platform SDKs",
+        "UI implementation",
+        "App lifecycle management",
+        "API consumption"
+      ],
+      "nice_to_have_technical_skills": [
+        "Cross-platform frameworks",
+        "Push notifications",
+        "Offline storage",
+        "App analytics"
+      ],
+      "required_soft_skills": [
+        "Creativity",
+        "User focus",
+        "Iteration mindset",
+        "Detail orientation"
+      ],
+      "typical_education": "Bachelor's degree in Computer Science or Mobile Computing",
+      "experience_level": "Entry to senior",
+      "preferred_work_style": "Design-driven, iterative, and release-focused",
+      "typical_industries": [
+        "Consumer apps",
+        "Retail",
+        "Healthtech",
+        "Gaming"
+      ],
+      "salary_band": "$85k-$160k USD",
+      "career_growth": "Mobile Developer -> Senior Mobile Developer -> Mobile Architect -> Engineering Lead",
+      "future_demand": "High",
+      "difficulty_level": "Moderate to high"
+    },
+    {
+      "career": "Data Scientist",
+      "description": "Uses statistical methods, machine learning, and data analysis to extract insight and solve business problems from data.",
+      "required_technical_skills": [
+        "Python or R",
+        "Statistics",
+        "Machine learning",
+        "Data visualization",
+        "SQL"
+      ],
+      "nice_to_have_technical_skills": [
+        "Experiment design",
+        "Time series analysis",
+        "MLOps",
+        "Big data tools"
+      ],
+      "required_soft_skills": [
+        "Critical thinking",
+        "Business acumen",
+        "Communication",
+        "Curiosity"
+      ],
+      "typical_education": "Bachelor's or Master's degree in Statistics, Mathematics, Computer Science, or related field",
+      "experience_level": "Entry to senior",
+      "preferred_work_style": "Analytical, experimental, and insight-driven",
+      "typical_industries": [
+        "Finance",
+        "Healthcare",
+        "Retail",
+        "Technology"
+      ],
+      "salary_band": "$95k-$180k USD",
+      "career_growth": "Data Scientist -> Senior Data Scientist -> Lead Data Scientist -> Principal Scientist",
+      "future_demand": "Very high",
+      "difficulty_level": "High"
+    },
+    {
+      "career": "ML Engineer",
+      "description": "Builds and deploys machine learning systems, turning models into scalable production services and pipelines.",
+      "required_technical_skills": [
+        "Machine learning",
+        "Python",
+        "Model deployment",
+        "Data pipelines",
+        "Software engineering"
+      ],
+      "nice_to_have_technical_skills": [
+        "MLOps",
+        "Distributed training",
+        "Feature stores",
+        "Model monitoring"
+      ],
+      "required_soft_skills": [
+        "Systems thinking",
+        "Collaboration",
+        "Experimentation",
+        "Reliability mindset"
+      ],
+      "typical_education": "Bachelor's or Master's degree in Computer Science, AI, or related field",
+      "experience_level": "Mid to senior",
+      "preferred_work_style": "Engineering-focused, iterative, and production-oriented",
+      "typical_industries": [
+        "AI startups",
+        "Technology",
+        "Autonomous systems",
+        "E-commerce"
+      ],
+      "salary_band": "$110k-$220k USD",
+      "career_growth": "ML Engineer -> Senior ML Engineer -> ML Platform Engineer -> AI Engineering Manager",
+      "future_demand": "Very high",
+      "difficulty_level": "High"
+    },
+    {
+      "career": "Data Engineer",
+      "description": "Designs and manages data pipelines, storage systems, and data infrastructure that make analytics and AI possible.",
+      "required_technical_skills": [
+        "SQL",
+        "ETL/ELT",
+        "Data modeling",
+        "Distributed data systems",
+        "Python"
+      ],
+      "nice_to_have_technical_skills": [
+        "Spark",
+        "Kafka",
+        "Cloud data services",
+        "Streaming pipelines"
+      ],
+      "required_soft_skills": [
+        "Problem solving",
+        "Data quality mindset",
+        "Cross-functional collaboration",
+        "Operational thinking"
+      ],
+      "typical_education": "Bachelor's degree in Computer Science, Information Systems, or related field",
+      "experience_level": "Mid to senior",
+      "preferred_work_style": "Infrastructure-minded, reliable, and data-obsessed",
+      "typical_industries": [
+        "Finance",
+        "Retail",
+        "Healthcare",
+        "Technology"
+      ],
+      "salary_band": "$100k-$190k USD",
+      "career_growth": "Data Engineer -> Senior Data Engineer -> Data Platform Engineer -> Architect",
+      "future_demand": "Very high",
+      "difficulty_level": "High"
+    },
+    {
+      "career": "AI Research Engineer",
+      "description": "Applies advanced research concepts to build novel AI systems, prototypes, and experimental solutions with strong scientific rigor.",
+      "required_technical_skills": [
+        "Deep learning",
+        "PyTorch or TensorFlow",
+        "Linear algebra",
+        "Research methods",
+        "Python"
+      ],
+      "nice_to_have_technical_skills": [
+        "Transformers",
+        "Reinforcement learning",
+        "Distributed training",
+        "Publication experience"
+      ],
+      "required_soft_skills": [
+        "Curiosity",
+        "Hypothesis-driven thinking",
+        "Persistence",
+        "Scientific communication"
+      ],
+      "typical_education": "Master's or PhD in AI, Machine Learning, Computer Science, or related field",
+      "experience_level": "Mid to senior",
+      "preferred_work_style": "Research-intensive, experimental, and academically curious",
+      "typical_industries": [
+        "Research labs",
+        "AI companies",
+        "Autonomous tech",
+        "Big tech"
+      ],
+      "salary_band": "$120k-$250k USD",
+      "career_growth": "AI Research Engineer -> Senior Research Engineer -> Research Scientist -> Principal Scientist",
+      "future_demand": "High",
+      "difficulty_level": "Very high"
+    },
+    {
+      "career": "DevOps Engineer",
+      "description": "Bridges development and operations by improving deployment automation, reliability, monitoring, and delivery pipelines.",
+      "required_technical_skills": [
+        "Linux",
+        "Scripting",
+        "CI/CD",
+        "Containerization",
+        "Monitoring"
+      ],
+      "nice_to_have_technical_skills": [
+        "Infrastructure as Code",
+        "Kubernetes",
+        "Cloud platforms",
+        "Security automation"
+      ],
+      "required_soft_skills": [
+        "Ownership",
+        "Troubleshooting",
+        "Communication",
+        "Calm under pressure"
+      ],
+      "typical_education": "Bachelor's degree in Computer Science, IT, or related field",
+      "experience_level": "Mid to senior",
+      "preferred_work_style": "Automation-heavy, incident-driven, and reliability-focused",
+      "typical_industries": [
+        "Technology",
+        "Finance",
+        "Healthcare",
+        "E-commerce"
+      ],
+      "salary_band": "$100k-$190k USD",
+      "career_growth": "DevOps Engineer -> Senior DevOps Engineer -> Platform Engineer -> SRE Lead",
+      "future_demand": "Very high",
+      "difficulty_level": "High"
+    },
+    {
+      "career": "Cloud Engineer",
+      "description": "Designs, deploys, and manages cloud-based infrastructure and services for scalable applications and platforms.",
+      "required_technical_skills": [
+        "Cloud platforms",
+        "Networking",
+        "Virtualization",
+        "Infrastructure as Code",
+        "Security basics"
+      ],
+      "nice_to_have_technical_skills": [
+        "Kubernetes",
+        "Serverless",
+        "Cost optimization",
+        "Hybrid cloud"
+      ],
+      "required_soft_skills": [
+        "Architectural thinking",
+        "Problem solving",
+        "Documentation",
+        "Stakeholder communication"
+      ],
+      "typical_education": "Bachelor's degree in Computer Science, IT, or Cloud Computing",
+      "experience_level": "Mid to senior",
+      "preferred_work_style": "Architecture-driven, scalable, and implementation-focused",
+      "typical_industries": [
+        "Technology",
+        "Consulting",
+        "Telecom",
+        "Government"
+      ],
+      "salary_band": "$105k-$200k USD",
+      "career_growth": "Cloud Engineer -> Senior Cloud Engineer -> Cloud Architect -> Principal Architect",
+      "future_demand": "Very high",
+      "difficulty_level": "High"
+    },
+    {
+      "career": "Cyber Security Analyst",
+      "description": "Monitors, analyzes, and responds to security events to protect systems, networks, and sensitive data.",
+      "required_technical_skills": [
+        "Network security",
+        "Threat detection",
+        "Security tools",
+        "Incident response",
+        "Log analysis"
+      ],
+      "nice_to_have_technical_skills": [
+        "SIEM",
+        "Endpoint security",
+        "Forensics",
+        "Cloud security"
+      ],
+      "required_soft_skills": [
+        "Attention to detail",
+        "Analytical thinking",
+        "Calm decision-making",
+        "Ethical judgment"
+      ],
+      "typical_education": "Bachelor's degree in Cybersecurity, IT, or Computer Science",
+      "experience_level": "Entry to senior",
+      "preferred_work_style": "Alert-driven, analytical, and process-oriented",
+      "typical_industries": [
+        "Finance",
+        "Government",
+        "Healthcare",
+        "Technology"
+      ],
+      "salary_band": "$80k-$160k USD",
+      "career_growth": "Analyst -> Senior Analyst -> Security Engineer -> Security Manager",
+      "future_demand": "Very high",
+      "difficulty_level": "High"
+    },
+    {
+      "career": "Ethical Hacker",
+      "description": "Simulates attacks and identifies vulnerabilities to improve security posture and defend systems effectively.",
+      "required_technical_skills": [
+        "Penetration testing",
+        "Networking",
+        "Web application security",
+        "Scripting",
+        "Security concepts"
+      ],
+      "nice_to_have_technical_skills": [
+        "Exploit development",
+        "Wireless security",
+        "Cloud penetration testing",
+        "Threat modeling"
+      ],
+      "required_soft_skills": [
+        "Curiosity",
+        "Creativity",
+        "Patience",
+        "Ethical responsibility"
+      ],
+      "typical_education": "Bachelor's degree in Cybersecurity, Computer Science, or related field",
+      "experience_level": "Mid to senior",
+      "preferred_work_style": "Adventurous, hands-on, and deeply technical",
+      "typical_industries": [
+        "Security firms",
+        "Consulting",
+        "Government",
+        "Large enterprises"
+      ],
+      "salary_band": "$95k-$190k USD",
+      "career_growth": "Ethical Hacker -> Senior Penetration Tester -> Security Consultant -> Red Team Lead",
+      "future_demand": "High",
+      "difficulty_level": "Very high"
+    },
+    {
+      "career": "Network Engineer",
+      "description": "Designs, configures, and maintains network infrastructure that supports communication, connectivity, and enterprise operations.",
+      "required_technical_skills": [
+        "Routing and switching",
+        "TCP/IP",
+        "Network protocols",
+        "Firewalls",
+        "Troubleshooting"
+      ],
+      "nice_to_have_technical_skills": [
+        "SD-WAN",
+        "Wireless networking",
+        "Automation",
+        "Cloud networking"
+      ],
+      "required_soft_skills": [
+        "Attention to detail",
+        "Structured thinking",
+        "Problem solving",
+        "Documentation"
+      ],
+      "typical_education": "Bachelor's degree in Networking, IT, or Computer Science",
+      "experience_level": "Entry to senior",
+      "preferred_work_style": "Reliable, precise, and operations-oriented",
+      "typical_industries": [
+        "Telecom",
+        "Enterprises",
+        "Education",
+        "Government"
+      ],
+      "salary_band": "$75k-$150k USD",
+      "career_growth": "Network Engineer -> Senior Network Engineer -> Network Architect -> Infrastructure Lead",
+      "future_demand": "Moderate to high",
+      "difficulty_level": "Moderate"
+    },
+    {
+      "career": "UI/UX Designer",
+      "description": "Designs intuitive and engaging user experiences, blending usability, visual design, and interaction principles.",
+      "required_technical_skills": [
+        "UI design",
+        "Wireframing",
+        "Prototyping",
+        "Visual design",
+        "User research"
+      ],
+      "nice_to_have_technical_skills": [
+        "Design systems",
+        "Interaction design",
+        "Figma",
+        "Accessibility"
+      ],
+      "required_soft_skills": [
+        "Empathy",
+        "Creativity",
+        "Communication",
+        "User advocacy"
+      ],
+      "typical_education": "Bachelor's degree in Design, HCI, or related field",
+      "experience_level": "Entry to senior",
+      "preferred_work_style": "Creative, collaborative, and user-centered",
+      "typical_industries": [
+        "Product companies",
+        "Digital agencies",
+        "E-commerce",
+        "Startups"
+      ],
+      "salary_band": "$75k-$145k USD",
+      "career_growth": "UI/UX Designer -> Senior Designer -> Lead Designer -> Design Director",
+      "future_demand": "High",
+      "difficulty_level": "Moderate"
+    },
+    {
+      "career": "Product Manager",
+      "description": "Connects business goals, user needs, and technology execution to guide product strategy and delivery.",
+      "required_technical_skills": [
+        "Product strategy",
+        "Roadmapping",
+        "Data analysis",
+        "Requirements gathering",
+        "Stakeholder management"
+      ],
+      "nice_to_have_technical_skills": [
+        "Agile methodologies",
+        "Basic technical literacy",
+        "Analytics tools",
+        "UX principles"
+      ],
+      "required_soft_skills": [
+        "Leadership",
+        "Communication",
+        "Decision-making",
+        "Negotiation"
+      ],
+      "typical_education": "Bachelor's degree in Business, Computer Science, Engineering, or related field",
+      "experience_level": "Mid to senior",
+      "preferred_work_style": "Strategic, cross-functional, and outcome-driven",
+      "typical_industries": [
+        "Technology",
+        "Fintech",
+        "Healthcare",
+        "Consumer products"
+      ],
+      "salary_band": "$110k-$220k USD",
+      "career_growth": "Product Manager -> Senior Product Manager -> Director of Product -> VP Product",
+      "future_demand": "High",
+      "difficulty_level": "High"
+    },
+    {
+      "career": "Business Analyst",
+      "description": "Bridges business needs and technical implementation by analyzing processes, requirements, and data-driven opportunities.",
+      "required_technical_skills": [
+        "Requirements analysis",
+        "Process modeling",
+        "Data analysis",
+        "Documentation",
+        "Business tools"
+      ],
+      "nice_to_have_technical_skills": [
+        "SQL",
+        "Agile",
+        "Visualization tools",
+        "Workflow automation"
+      ],
+      "required_soft_skills": [
+        "Communication",
+        "Critical thinking",
+        "Stakeholder management",
+        "Problem solving"
+      ],
+      "typical_education": "Bachelor's degree in Business, IT, Economics, or related field",
+      "experience_level": "Entry to senior",
+      "preferred_work_style": "Structured, analytical, and stakeholder-focused",
+      "typical_industries": [
+        "Consulting",
+        "Finance",
+        "Healthcare",
+        "Retail"
+      ],
+      "salary_band": "$70k-$135k USD",
+      "career_growth": "Business Analyst -> Senior Business Analyst -> Product Owner -> Business Systems Lead",
+      "future_demand": "High",
+      "difficulty_level": "Moderate"
+    },
+    {
+      "career": "QA Engineer",
+      "description": "Validates software quality through testing, automation, and defect management to ensure reliable releases.",
+      "required_technical_skills": [
+        "Software testing",
+        "Test case design",
+        "Automation tools",
+        "Bug tracking",
+        "Basic scripting"
+      ],
+      "nice_to_have_technical_skills": [
+        "API testing",
+        "CI/CD integration",
+        "Performance testing",
+        "Security testing"
+      ],
+      "required_soft_skills": [
+        "Attention to detail",
+        "Patience",
+        "Analytical thinking",
+        "Communication"
+      ],
+      "typical_education": "Bachelor's degree in Computer Science or related field",
+      "experience_level": "Entry to senior",
+      "preferred_work_style": "Methodical, quality-focused, and detail-oriented",
+      "typical_industries": [
+        "Software",
+        "Fintech",
+        "Gaming",
+        "Healthcare"
+      ],
+      "salary_band": "$70k-$130k USD",
+      "career_growth": "QA Engineer -> Senior QA Engineer -> Test Lead -> Quality Engineering Manager",
+      "future_demand": "Moderate to high",
+      "difficulty_level": "Moderate"
+    },
+    {
+      "career": "Database Administrator",
+      "description": "Maintains database systems, ensures availability, performance, backup, and security of critical data assets.",
+      "required_technical_skills": [
+        "Database administration",
+        "SQL",
+        "Backup and recovery",
+        "Performance tuning",
+        "Security administration"
+      ],
+      "nice_to_have_technical_skills": [
+        "Cloud databases",
+        "High availability",
+        "Automation",
+        "Replication"
+      ],
+      "required_soft_skills": [
+        "Reliability mindset",
+        "Troubleshooting",
+        "Attention to detail",
+        "Communication"
+      ],
+      "typical_education": "Bachelor's degree in Computer Science, Information Systems, or related field",
+      "experience_level": "Mid to senior",
+      "preferred_work_style": "Structured, operations-oriented, and stability-focused",
+      "typical_industries": [
+        "Finance",
+        "Healthcare",
+        "Enterprise software",
+        "Government"
+      ],
+      "salary_band": "$85k-$160k USD",
+      "career_growth": "DBA -> Senior DBA -> Database Architect -> Data Platform Lead",
+      "future_demand": "Moderate to high",
+      "difficulty_level": "High"
+    },
+    {
+      "career": "Game Developer",
+      "description": "Creates interactive gameplay systems, graphics, and experiences for video games across various platforms.",
+      "required_technical_skills": [
+        "Game programming",
+        "Math and physics",
+        "Graphics fundamentals",
+        "Game engines",
+        "Performance optimization"
+      ],
+      "nice_to_have_technical_skills": [
+        "3D rendering",
+        "AI for games",
+        "Multiplayer systems",
+        "Tools development"
+      ],
+      "required_soft_skills": [
+        "Creativity",
+        "Iteration mindset",
+        "Collaboration",
+        "Problem solving"
+      ],
+      "typical_education": "Bachelor's degree in Computer Science, Game Development, or related field",
+      "experience_level": "Entry to senior",
+      "preferred_work_style": "Creative, iterative, and performance-focused",
+      "typical_industries": [
+        "Gaming",
+        "Interactive media",
+        "Entertainment",
+        "EdTech"
+      ],
+      "salary_band": "$80k-$170k USD",
+      "career_growth": "Game Developer -> Senior Game Developer -> Technical Lead -> Principal Engineer",
+      "future_demand": "Moderate",
+      "difficulty_level": "High"
+    }
+  ]
+}

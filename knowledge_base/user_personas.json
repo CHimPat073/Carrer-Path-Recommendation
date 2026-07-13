@@ -1,0 +1,59 @@
+{
+  "user_personas": [
+    {
+      "persona": "Beginner",
+      "years_of_experience": 0,
+      "projects_completed": 1,
+      "certifications": 0,
+      "leadership": 2,
+      "communication": 4,
+      "problem_solving": 4,
+      "expected_salary": 45000,
+      "career_growth": 7
+    },
+    {
+      "persona": "Junior",
+      "years_of_experience": 1,
+      "projects_completed": 3,
+      "certifications": 1,
+      "leadership": 3,
+      "communication": 5,
+      "problem_solving": 5,
+      "expected_salary": 65000,
+      "career_growth": 8
+    },
+    {
+      "persona": "Mid-Level",
+      "years_of_experience": 3,
+      "projects_completed": 8,
+      "certifications": 2,
+      "leadership": 5,
+      "communication": 7,
+      "problem_solving": 7,
+      "expected_salary": 90000,
+      "career_growth": 8
+    },
+    {
+      "persona": "Senior",
+      "years_of_experience": 7,
+      "projects_completed": 15,
+      "certifications": 3,
+      "leadership": 7,
+      "communication": 8,
+      "problem_solving": 8,
+      "expected_salary": 130000,
+      "career_growth": 9
+    },
+    {
+      "persona": "Expert",
+      "years_of_experience": 12,
+      "projects_completed": 25,
+      "certifications": 5,
+      "leadership": 9,
+      "communication": 9,
+      "problem_solving": 9,
+      "expected_salary": 180000,
+      "career_growth": 10
+    }
+  ]
+}

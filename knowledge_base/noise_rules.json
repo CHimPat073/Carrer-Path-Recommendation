@@ -1,0 +1,130 @@
+{
+  "noise_generation_rules": {
+    "description": "Realistic noise injection rules for generating imperfect candidate profiles without impossible combinations.",
+    "noise_rate": {
+      "min_percentage": 5,
+      "max_percentage": 10,
+      "default": 8
+    },
+    "allowed_noise_types": [
+      "weak_skill",
+      "interest_mismatch",
+      "average_soft_skill",
+      "lower_certification_level",
+      "limited_experience"
+    ],
+    "rules": [
+      {
+        "type": "weak_skill",
+        "description": "A candidate is slightly below average in one core skill for their target career.",
+        "examples": [
+          "Data Scientist weak in SQL",
+          "Cloud Engineer with low DevOps",
+          "Backend Developer weak in database design"
+        ],
+        "applicable_careers": [
+          "Backend Developer",
+          "Data Scientist",
+          "Cloud Engineer",
+          "DevOps Engineer",
+          "Software Engineer",
+          "Data Engineer"
+        ],
+        "skill_drop": 1.5,
+        "max_drop": 2.5,
+        "realistic_only": true
+      },
+      {
+        "type": "interest_mismatch",
+        "description": "A candidate shows interest in a neighboring domain but lacks depth in that area.",
+        "examples": [
+          "Backend Developer interested in AI",
+          "Frontend Developer interested in cybersecurity",
+          "Product Manager interested in ML"
+        ],
+        "applicable_careers": [
+          "Backend Developer",
+          "Frontend Developer",
+          "Product Manager",
+          "Software Engineer",
+          "Data Scientist",
+          "Business Analyst"
+        ],
+        "interest_shift": 1,
+        "max_interest_shift": 2,
+        "requires_related_domain": true
+      },
+      {
+        "type": "average_soft_skill",
+        "description": "A candidate has only average communication, leadership, or teamwork for a role that usually needs stronger soft skills.",
+        "examples": [
+          "Product Manager with average communication",
+          "Senior Developer with average teamwork",
+          "Data Scientist with average leadership"
+        ],
+        "applicable_careers": [
+          "Product Manager",
+          "Software Engineer",
+          "Data Scientist",
+          "ML Engineer",
+          "Frontend Developer",
+          "UI/UX Designer"
+        ],
+        "soft_skill_target": 5,
+        "range": [4, 6],
+        "realistic_only": true
+      },
+      {
+        "type": "lower_certification_level",
+        "description": "A candidate has fewer certifications than typical for the target career level.",
+        "examples": [
+          "Mid-level Cloud Engineer with no cloud cert",
+          "Senior Data Engineer with only one cert"
+        ],
+        "applicable_careers": [
+          "Cloud Engineer",
+          "DevOps Engineer",
+          "Cyber Security Analyst",
+          "Data Engineer",
+          "ML Engineer"
+        ],
+        "certification_drop": 1,
+        "max_drop": 2,
+        "avoid_impossible_cases": true
+      },
+      {
+        "type": "limited_experience",
+        "description": "A candidate has slightly less experience than the norm for the role but still fits the career path.",
+        "examples": [
+          "Junior ML Engineer with limited deployment experience",
+          "Mid-level Product Manager with fewer projects"
+        ],
+        "applicable_careers": [
+          "ML Engineer",
+          "Product Manager",
+          "Data Scientist",
+          "Software Engineer",
+          "Cloud Engineer"
+        ],
+        "experience_drop": 1,
+        "max_drop": 3,
+        "requires_non_beginner_level": true
+      }
+    ],
+    "invalid_combinations_to_avoid": [
+      "AI Research Engineer with no research background",
+      "Ethical Hacker with no security foundation",
+      "Game Developer with no programming ability",
+      "UI/UX Designer with zero design skill",
+      "Database Administrator with no SQL ability",
+      "Network Engineer with no networking knowledge"
+    ],
+    "realism_constraints": {
+      "preserve_domain_fit": true,
+      "avoid_extreme_outliers": true,
+      "maintain_reasonable_skill_balance": true,
+      "do_not_create_conflicting_role_signals": true,
+      "prefer_one_noise_issue_per_profile": true
+    }
+  }
+}
