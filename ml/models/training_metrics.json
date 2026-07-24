@@ -1,0 +1,114 @@
+{
+  "timestamp": "2026-07-15T21:35:01.380871",
+  "training_time_seconds": 0.0,
+  "model_config": {
+    "data_path": "E:\\Sem 6 Fall 2025-26\\CSA4008 Applied Machine Learning\\GA\\Research Paper\\Final project\\CareerPilot-AI\\datasets\\synthetic\\synthetic_dataset_v2.csv",
+    "train_size": 14000,
+    "val_size": 3000,
+    "test_size": 3000,
+    "model_params": {
+      "n_estimators": 100,
+      "max_depth": null,
+      "min_samples_split": 2,
+      "min_samples_leaf": 1,
+      "random_state": 42,
+      "n_jobs": -1,
+      "class_weight": "balanced"
+    },
+    "cv_folds": 5
+  },
+  "cv_scores": {
+    "accuracy": [
+      0.047857142857142855,
+      0.05107142857142857,
+      0.04857142857142857,
+      0.056428571428571425,
+      0.04964285714285714
+    ],
+    "precision_weighted": [
+      0.048711471376535545,
+      0.051327456141374,
+      0.048287129328181494,
+      0.056756982332001715,
+      0.04986791779850567
+    ],
+    "recall_weighted": [
+      0.047857142857142855,
+      0.05107142857142857,
+      0.04857142857142857,
+      0.056428571428571425,
+      0.04964285714285714
+    ],
+    "f1_weighted": [
+      0.04780777315145587,
+      0.050706887673342305,
+      0.04803157321805538,
+      0.05618179740773337,
+      0.04897173024600169
+    ]
+  },
+  "cv_summary": {
+    "accuracy_mean": 0.05071428571428571,
+    "accuracy_std": 0.003055607090886776,
+    "f1_mean": 0.05033995233931773,
+    "f1_std": 0.003094329415116843
+  },
+  "feature_importance": {
+    "projects_completed": 0.045056080421166635,
+    "years_experience": 0.03921355111456964,
+    "industry": 0.034312768450326894,
+    "country": 0.03341680969304178,
+    "business_analysis_score": 0.030736262407409162,
+    "testing_score": 0.03038104188401223,
+    "cloud_score": 0.0303538746969404,
+    "problem_solving_score": 0.03034015669726979,
+    "teamwork_score": 0.030337738933437833,
+    "ux_research_score": 0.03025868569412891,
+    "sql_score": 0.03025647022995238,
+    "machine_learning_score": 0.03013932738328466,
+    "python_score": 0.030129545576211524,
+    "mobile_score": 0.030104824278745546,
+    "java_score": 0.03007732361818731,
+    "certifications": 0.030074736362639246,
+    "database_score": 0.030045794235911815,
+    "product_management_score": 0.029977896850197715,
+    "game_dev_score": 0.029896257271061825,
+    "deep_learning_score": 0.02985703965709509,
+    "ui_design_score": 0.029825513229509992,
+    "data_analysis_score": 0.02981487382914293,
+    "research_score": 0.029763819029434636,
+    "cybersecurity_score": 0.02975983120934549,
+    "agile_score": 0.029684568454214105,
+    "networking_score": 0.02966423978946021,
+    "devops_score": 0.0293415881900992,
+    "communication_score": 0.029306197340287964,
+    "javascript_score": 0.029183148979994068,
+    "leadership_score": 0.02911156045973226,
+    "employment_type": 0.024941527838124866,
+    "education_level": 0.023375310059517495,
+    "remote_preference": 0.021261636135546404
+  },
+  "class_names": [
+    "AI Research Engineer",
+    "Backend Developer",
+    "Business Analyst",
+    "Cloud Engineer",
+    "Cyber Security Analyst",
+    "Data Engineer",
+    "Data Scientist",
+    "Database Administrator",
+    "DevOps Engineer",
+    "Ethical Hacker",
+    "Frontend Developer",
+    "Full Stack Developer",
+    "Game Developer",
+    "ML Engineer",
+    "Mobile App Developer",
+    "Network Engineer",
+    "Product Manager",
+    "QA Engineer",
+    "Software Engineer",
+    "UI/UX Designer"
+  ],
+  "num_classes": 20
+}

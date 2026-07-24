@@ -1,10 +1,24 @@
 {
+  "metadata": {
+    "description": "User personas defining typical skill profiles for each career experience level.",
+    "version": "2.0",
+    "last_updated": "2026-07-16",
+    "usage": "Used as reference for synthetic data generation and career recommendation baseline"
+  },
   "user_personas": [
     {
       "persona": "Beginner",
       "years_of_experience": 0,
       "projects_completed": 1,
       "certifications": 0,
+      "technical_skill_average": 3,
+      "primary_tech_skills": {
+        "Python": 2,
+        "JavaScript": 2,
+        "SQL": 2,
+        "Communication": 4,
+        "Teamwork": 4
+      },
       "leadership": 2,
       "communication": 4,
       "problem_solving": 4,
@@ -16,6 +30,14 @@
       "years_of_experience": 1,
       "projects_completed": 3,
       "certifications": 1,
+      "technical_skill_average": 5,
+      "primary_tech_skills": {
+        "Python": 4,
+        "JavaScript": 4,
+        "SQL": 3,
+        "Communication": 5,
+        "Teamwork": 5
+      },
       "leadership": 3,
       "communication": 5,
       "problem_solving": 5,
@@ -27,6 +49,16 @@
       "years_of_experience": 3,
       "projects_completed": 8,
       "certifications": 2,
+      "technical_skill_average": 7,
+      "primary_tech_skills": {
+        "Python": 7,
+        "JavaScript": 6,
+        "SQL": 6,
+        "Cloud": 5,
+        "DevOps": 4,
+        "Communication": 7,
+        "Teamwork": 7
+      },
       "leadership": 5,
       "communication": 7,
       "problem_solving": 7,
@@ -38,6 +70,18 @@
       "years_of_experience": 7,
       "projects_completed": 15,
       "certifications": 3,
+      "technical_skill_average": 8,
+      "primary_tech_skills": {
+        "Python": 8,
+        "JavaScript": 8,
+        "SQL": 7,
+        "Cloud": 7,
+        "DevOps": 6,
+        "Machine Learning": 5,
+        "Leadership": 7,
+        "Communication": 8,
+        "Teamwork": 8
+      },
       "leadership": 7,
       "communication": 8,
       "problem_solving": 8,
@@ -49,6 +93,19 @@
       "years_of_experience": 12,
       "projects_completed": 25,
       "certifications": 5,
+      "technical_skill_average": 9,
+      "primary_tech_skills": {
+        "Python": 9,
+        "JavaScript": 9,
+        "SQL": 8,
+        "Cloud": 9,
+        "DevOps": 8,
+        "Machine Learning": 8,
+        "Deep Learning": 7,
+        "Leadership": 9,
+        "Communication": 9,
+        "Teamwork": 9
+      },
       "leadership": 9,
       "communication": 9,
       "problem_solving": 9,

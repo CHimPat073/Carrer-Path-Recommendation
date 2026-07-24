@@ -1,0 +1,945 @@
+{
+  "missing": {
+    "total_missing": 0,
+    "columns_with_missing": 0,
+    "missing_by_column": {},
+    "missing_percentage_by_column": {},
+    "status": "PASS"
+  },
+  "duplicates": {
+    "exact_duplicates": 0,
+    "near_duplicates_98pct": 8732,
+    "status": "PASS"
+  },
+  "class_distribution": {
+    "total_classes": 20,
+    "distribution": {
+      "Product Manager": 25,
+      "Database Administrator": 25,
+      "Data Scientist": 25,
+      "Software Engineer": 25,
+      "Cyber Security Analyst": 25,
+      "Mobile App Developer": 25,
+      "Ethical Hacker": 25,
+      "Business Analyst": 25,
+      "ML Engineer": 25,
+      "AI Research Engineer": 25,
+      "Cloud Engineer": 25,
+      "UI/UX Designer": 25,
+      "Network Engineer": 25,
+      "Backend Developer": 25,
+      "DevOps Engineer": 25,
+      "Full Stack Developer": 25,
+      "QA Engineer": 25,
+      "Game Developer": 25,
+      "Data Engineer": 25,
+      "Frontend Developer": 25
+    },
+    "min_count": 25,
+    "max_count": 25,
+    "mean_count": 25.0,
+    "std_count": 0.0,
+    "imbalance_ratio": 1.0,
+    "chi2_statistic": 0.0,
+    "chi2_p_value": 1.0,
+    "is_balanced": "True",
+    "status": "PASS"
+  },
+  "correlation": {
+    "high_correlation_pairs": [
+      {
+        "feature1": "years_experience",
+        "feature2": "projects_completed",
+        "correlation": 0.892807885944445
+      },
+      {
+        "feature1": "machine_learning_score",
+        "feature2": "deep_learning_score",
+        "correlation": 0.8820155240608483
+      },
+      {
+        "feature1": "ui_design_score",
+        "feature2": "ux_research_score",
+        "correlation": 0.8770157176699711
+      }
+    ],
+    "high_corr_count": 3,
+    "top_correlated_features": {
+      "ux_research_score": 0.3147134196374778,
+      "ui_design_score": 0.30942711896339586,
+      "python_score": 0.26727043660905814,
+      "networking_score": 0.24772574757070262,
+      "mobile_score": 0.2462890696695572,
+      "data_analysis_score": 0.2400247125365678,
+      "cloud_score": 0.2371584559026739,
+      "sql_score": 0.236266382467586,
+      "machine_learning_score": 0.23067833656541342,
+      "deep_learning_score": 0.23067708574342874
+    },
+    "status": "PASS"
+  },
+  "distribution": {
+    "distributions": {
+      "years_experience": {
+        "min": 1.0,
+        "max": 20.0,
+        "mean": 9.078,
+        "std": 4.615465419877411,
+        "median": 7.0,
+        "skewness": 0.6470788764258709,
+        "kurtosis": -0.6692019076025169,
+        "normality_test_pvalue": 1.2452469233895212e-15,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "projects_completed": {
+        "min": 2.0,
+        "max": 27.0,
+        "mean": 9.516,
+        "std": 5.490540599261997,
+        "median": 8.0,
+        "skewness": 0.6076647037239302,
+        "kurtosis": -0.4763348873956206,
+        "normality_test_pvalue": 5.172795578710855e-15,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "certifications": {
+        "min": 0.0,
+        "max": 6.0,
+        "mean": 2.03,
+        "std": 1.425891416856603,
+        "median": 2.0,
+        "skewness": 0.4495441095613725,
+        "kurtosis": -0.2799494208606843,
+        "normality_test_pvalue": 1.2409004881685157e-14,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "python_score": {
+        "min": 1.0,
+        "max": 10.0,
+        "mean": 6.026,
+        "std": 2.4636280007037796,
+        "median": 6.0,
+        "skewness": 0.11574348751077258,
+        "kurtosis": -0.9271860368344607,
+        "normality_test_pvalue": 2.676061666521605e-12,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "java_score": {
+        "min": 1.0,
+        "max": 9.0,
+        "mean": 3.75,
+        "std": 1.7916249160132147,
+        "median": 3.0,
+        "skewness": 0.6753459440462642,
+        "kurtosis": -0.19549063622931362,
+        "normality_test_pvalue": 4.7427097811722624e-15,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "javascript_score": {
+        "min": 1.0,
+        "max": 10.0,
+        "mean": 4.622,
+        "std": 2.2461536930552306,
+        "median": 4.0,
+        "skewness": 0.7475292696930401,
+        "kurtosis": -0.27729622066560644,
+        "normality_test_pvalue": 4.1033964089774653e-16,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "sql_score": {
+        "min": 2.0,
+        "max": 10.0,
+        "mean": 6.792,
+        "std": 2.10466035036078,
+        "median": 7.0,
+        "skewness": -0.029313237675138697,
+        "kurtosis": -0.8525258231176043,
+        "normality_test_pvalue": 1.5754358266597266e-12,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "machine_learning_score": {
+        "min": 1.0,
+        "max": 10.0,
+        "mean": 3.502,
+        "std": 2.7497487587910547,
+        "median": 2.0,
+        "skewness": 1.5556700067245348,
+        "kurtosis": 1.1026327292020373,
+        "normality_test_pvalue": 3.5557589124292142e-28,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "deep_learning_score": {
+        "min": 1.0,
+        "max": 10.0,
+        "mean": 2.35,
+        "std": 2.5219477474527032,
+        "median": 1.0,
+        "skewness": 2.1424555256118145,
+        "kurtosis": 3.1776559790932213,
+        "normality_test_pvalue": 2.1120983235299113e-33,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "cloud_score": {
+        "min": 1.0,
+        "max": 10.0,
+        "mean": 5.228,
+        "std": 2.0968570812619722,
+        "median": 5.0,
+        "skewness": 0.5077053496885529,
+        "kurtosis": -0.13625081776573156,
+        "normality_test_pvalue": 6.5312160573054e-12,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "devops_score": {
+        "min": 1.0,
+        "max": 10.0,
+        "mean": 4.42,
+        "std": 2.2157208392925654,
+        "median": 4.0,
+        "skewness": 0.934269288958162,
+        "kurtosis": 0.3420153138403914,
+        "normality_test_pvalue": 2.426903737387403e-17,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "cybersecurity_score": {
+        "min": 1.0,
+        "max": 10.0,
+        "mean": 3.786,
+        "std": 2.56463617642637,
+        "median": 3.0,
+        "skewness": 1.1859957453329382,
+        "kurtosis": 0.44864787773688963,
+        "normality_test_pvalue": 2.0829839420099893e-22,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "data_analysis_score": {
+        "min": 2.0,
+        "max": 10.0,
+        "mean": 5.732,
+        "std": 1.7783422061020786,
+        "median": 6.0,
+        "skewness": 0.34827246121681565,
+        "kurtosis": -0.39594826739875844,
+        "normality_test_pvalue": 6.33563018892284e-11,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "database_score": {
+        "min": 2.0,
+        "max": 10.0,
+        "mean": 5.952,
+        "std": 1.9383525016987193,
+        "median": 6.0,
+        "skewness": 0.5057274018556371,
+        "kurtosis": -0.2850214668159845,
+        "normality_test_pvalue": 8.546467601022912e-14,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "networking_score": {
+        "min": 1.0,
+        "max": 10.0,
+        "mean": 4.4,
+        "std": 2.85662749431608,
+        "median": 3.0,
+        "skewness": 0.8093937627548196,
+        "kurtosis": -0.6953057152010382,
+        "normality_test_pvalue": 3.3080680855049448e-21,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "mobile_score": {
+        "min": 1.0,
+        "max": 10.0,
+        "mean": 2.382,
+        "std": 1.93379293364632,
+        "median": 2.0,
+        "skewness": 2.4496097287849667,
+        "kurtosis": 6.237724852680797,
+        "normality_test_pvalue": 3.4526909363188395e-30,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "game_dev_score": {
+        "min": 1.0,
+        "max": 10.0,
+        "mean": 1.756,
+        "std": 1.935964855011495,
+        "median": 1.0,
+        "skewness": 3.737343333777719,
+        "kurtosis": 12.99076812838551,
+        "normality_test_pvalue": 7.578859199632934e-38,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "testing_score": {
+        "min": 2.0,
+        "max": 10.0,
+        "mean": 5.352,
+        "std": 1.8436089030960852,
+        "median": 5.0,
+        "skewness": 0.44407496901157556,
+        "kurtosis": -0.06729553474850913,
+        "normality_test_pvalue": 1.0001275369834577e-11,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "business_analysis_score": {
+        "min": 2.0,
+        "max": 10.0,
+        "mean": 4.438,
+        "std": 2.051969091947688,
+        "median": 4.0,
+        "skewness": 1.4423313661608859,
+        "kurtosis": 1.546397089113836,
+        "normality_test_pvalue": 1.1931410985923614e-23,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "product_management_score": {
+        "min": 1.0,
+        "max": 10.0,
+        "mean": 2.672,
+        "std": 1.9687987039495292,
+        "median": 2.0,
+        "skewness": 2.5515906020773302,
+        "kurtosis": 6.679500623813402,
+        "normality_test_pvalue": 1.2095061232097496e-30,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "ui_design_score": {
+        "min": 1.0,
+        "max": 10.0,
+        "mean": 3.892,
+        "std": 2.5252901180578684,
+        "median": 3.0,
+        "skewness": 1.0343547208567927,
+        "kurtosis": 0.01655359676362478,
+        "normality_test_pvalue": 3.710090381062324e-21,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "ux_research_score": {
+        "min": 1.0,
+        "max": 10.0,
+        "mean": 3.438,
+        "std": 2.4572815192667403,
+        "median": 2.0,
+        "skewness": 1.2302726448134869,
+        "kurtosis": 0.6302522629233827,
+        "normality_test_pvalue": 5.730540127463591e-23,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "communication_score": {
+        "min": 5.0,
+        "max": 10.0,
+        "mean": 8.102,
+        "std": 1.0871798010631357,
+        "median": 8.0,
+        "skewness": -0.05309104391510004,
+        "kurtosis": -0.4530050118190201,
+        "normality_test_pvalue": 1.0743182690100655e-15,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "leadership_score": {
+        "min": 2.0,
+        "max": 10.0,
+        "mean": 5.092,
+        "std": 1.4805133703142836,
+        "median": 5.0,
+        "skewness": 0.9765179645597312,
+        "kurtosis": 2.218080996120549,
+        "normality_test_pvalue": 2.4070121840910413e-18,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "problem_solving_score": {
+        "min": 6.0,
+        "max": 10.0,
+        "mean": 9.044,
+        "std": 0.944376882071338,
+        "median": 9.0,
+        "skewness": -0.7164022457705064,
+        "kurtosis": -0.23870767582353603,
+        "normality_test_pvalue": 2.2892048539706975e-22,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "teamwork_score": {
+        "min": 5.0,
+        "max": 10.0,
+        "mean": 7.57,
+        "std": 0.8892026555996394,
+        "median": 8.0,
+        "skewness": -0.14345024234264742,
+        "kurtosis": 0.14035348336327758,
+        "normality_test_pvalue": 2.978286849782357e-18,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "agile_score": {
+        "min": 2.0,
+        "max": 9.0,
+        "mean": 5.57,
+        "std": 1.5171365814631281,
+        "median": 6.0,
+        "skewness": 0.17140923594689744,
+        "kurtosis": -0.44121750299636364,
+        "normality_test_pvalue": 2.6951024013890008e-11,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "research_score": {
+        "min": 3.0,
+        "max": 10.0,
+        "mean": 6.238,
+        "std": 2.056651558058031,
+        "median": 6.0,
+        "skewness": 0.4490249309369965,
+        "kurtosis": -0.9436091883552931,
+        "normality_test_pvalue": 3.412978860698273e-16,
+        "is_normal": "False",
+        "range_violations": 0
+      },
+      "career_growth_score": {
+        "min": 6.0,
+        "max": 9.0,
+        "mean": 7.494,
+        "std": 0.9485586576770612,
+        "median": 8.0,
+        "skewness": -0.010972170552150246,
+        "kurtosis": -0.9139279585885483,
+        "normality_test_pvalue": 3.5436708390626126e-19,
+        "is_normal": "False",
+        "range_violations": 0
+      }
+    },
+    "non_normal_features": 29,
+    "range_violations": 0,
+    "status": "PASS"
+  },
+  "pca": {
+    "explained_variance_ratio": [
+      0.20497171726924704,
+      0.1410631085998069,
+      0.11570723266808709,
+      0.08140222427255331,
+      0.0767861615979865,
+      0.04551039510371913,
+      0.04166441614849445,
+      0.03411420667885331,
+      0.03256611245355347,
+      0.02692394845507312
+    ],
+    "cumulative_variance": [
+      0.20497171726924704,
+      0.34603482586905393,
+      0.461742058537141,
+      0.5431442828096943,
+      0.6199304444076807,
+      0.6654408395113999,
+      0.7071052556598943,
+      0.7412194623387477,
+      0.7737855747923011,
+      0.8007095232473742
+    ],
+    "components_to_90pct": 10,
+    "components_to_95pct": 10,
+    "top_features_per_component": {
+      "networking_score": 1.0286420154215328,
+      "cybersecurity_score": 0.9851684557759038,
+      "years_experience": 0.9409602469761154,
+      "product_management_score": 0.9261343073434503,
+      "machine_learning_score": 0.9142897698737853,
+      "business_analysis_score": 0.9052882082084335,
+      "python_score": 0.8983749550608084,
+      "java_score": 0.8762848598568664,
+      "deep_learning_score": 0.8733690327664161,
+      "projects_completed": 0.8720562791207858
+    },
+    "status": "PASS"
+  },
+  "tsne": {
+    "perplexity_used": 30,
+    "iterations": 1000,
+    "silhouette_score_cluster": 0.5943188667297363,
+    "clusters_formed": 20,
+    "class_separation": "GOOD",
+    "status": "PASS"
+  },
+  "anova": {
+    "anova_results": {
+      "python_score": {
+        "f_statistic": 142.73606552830344,
+        "p_value": 1.4183264717480884e-183,
+        "significant": "True",
+        "eta_squared": 5.649969260495344
+      },
+      "java_score": {
+        "f_statistic": 60.395739560586456,
+        "p_value": 4.736037675974366e-114,
+        "significant": "True",
+        "eta_squared": 2.3906646909398805
+      },
+      "javascript_score": {
+        "f_statistic": 122.97818385232146,
+        "p_value": 1.2740702173625245e-170,
+        "significant": "True",
+        "eta_squared": 4.867886444154392
+      },
+      "sql_score": {
+        "f_statistic": 89.99624556768427,
+        "p_value": 1.2972560908485516e-144,
+        "significant": "True",
+        "eta_squared": 3.562351387054169
+      },
+      "machine_learning_score": {
+        "f_statistic": 225.41495122194183,
+        "p_value": 4.426130128257602e-225,
+        "significant": "True",
+        "eta_squared": 8.922675152535197
+      },
+      "deep_learning_score": {
+        "f_statistic": 418.2044713553836,
+        "p_value": 2.301024997895486e-284,
+        "significant": "True",
+        "eta_squared": 16.5539269911506
+      },
+      "cloud_score": {
+        "f_statistic": 77.68552436067888,
+        "p_value": 5.767753456050703e-133,
+        "significant": "True",
+        "eta_squared": 3.0750520059435393
+      },
+      "devops_score": {
+        "f_statistic": 90.9659665991903,
+        "p_value": 1.771541566357613e-145,
+        "significant": "True",
+        "eta_squared": 3.600736177884616
+      },
+      "cybersecurity_score": {
+        "f_statistic": 201.58150464802824,
+        "p_value": 1.0365373656130373e-214,
+        "significant": "True",
+        "eta_squared": 7.979267892317784
+      },
+      "data_analysis_score": {
+        "f_statistic": 72.31733533952364,
+        "p_value": 1.8906387256697804e-127,
+        "significant": "True",
+        "eta_squared": 2.8625611905228108
+      },
+      "database_score": {
+        "f_statistic": 79.5442882298683,
+        "p_value": 8.260290377357864e-135,
+        "significant": "True",
+        "eta_squared": 3.1486280757656204
+      },
+      "networking_score": {
+        "f_statistic": 307.35317341465293,
+        "p_value": 1.8517557075305614e-254,
+        "significant": "True",
+        "eta_squared": 12.166063114330012
+      },
+      "mobile_score": {
+        "f_statistic": 185.34268838644113,
+        "p_value": 5.27063233245643e-207,
+        "significant": "True",
+        "eta_squared": 7.336481415296628
+      },
+      "game_dev_score": {
+        "f_statistic": 420.13622291021795,
+        "p_value": 8.125306921671968e-285,
+        "significant": "True",
+        "eta_squared": 16.630392156862793
+      },
+      "testing_score": {
+        "f_statistic": 68.91551368309989,
+        "p_value": 8.482144712444327e-124,
+        "significant": "True",
+        "eta_squared": 2.727905749956037
+      },
+      "business_analysis_score": {
+        "f_statistic": 118.85029036535738,
+        "p_value": 1.0643300362193638e-167,
+        "significant": "True",
+        "eta_squared": 4.704490660295396
+      },
+      "product_management_score": {
+        "f_statistic": 179.29227623647188,
+        "p_value": 5.562586170099342e-204,
+        "significant": "True",
+        "eta_squared": 7.096985934360346
+      },
+      "ui_design_score": {
+        "f_statistic": 215.71889435819776,
+        "p_value": 5.508436685616941e-221,
+        "significant": "True",
+        "eta_squared": 8.538872901678662
+      },
+      "ux_research_score": {
+        "f_statistic": 273.2929499777064,
+        "p_value": 3.113062913097288e-243,
+        "significant": "True",
+        "eta_squared": 10.817845936617546
+      },
+      "communication_score": {
+        "f_statistic": 17.40625791282329,
+        "p_value": 2.0372582224222564e-43,
+        "significant": "True",
+        "eta_squared": 0.6889977090492552
+      },
+      "leadership_score": {
+        "f_statistic": 24.29213924337385,
+        "p_value": 2.4384074788903058e-58,
+        "significant": "True",
+        "eta_squared": 0.9615638450502149
+      },
+      "problem_solving_score": {
+        "f_statistic": 21.754714655491185,
+        "p_value": 4.511299458776828e-53,
+        "significant": "True",
+        "eta_squared": 0.8611241217798594
+      },
+      "teamwork_score": {
+        "f_statistic": 7.542196724037586,
+        "p_value": 4.21243635460669e-18,
+        "significant": "True",
+        "eta_squared": 0.29854528699315447
+      },
+      "agile_score": {
+        "f_statistic": 41.50782885047673,
+        "p_value": 1.5059725099386303e-88,
+        "significant": "True",
+        "eta_squared": 1.6430182253313705
+      },
+      "research_score": {
+        "f_statistic": 129.20495212538876,
+        "p_value": 7.02757443735703e-175,
+        "significant": "True",
+        "eta_squared": 5.114362688296638
+      },
+      "career_growth_score": {
+        "f_statistic": 0.9542587978822797,
+        "p_value": 0.5151069512087314,
+        "significant": "False",
+        "eta_squared": 0.03777274408284024
+      }
+    },
+    "significant_features": 25,
+    "total_features": 26,
+    "avg_f_statistic": 138.20710130404342,
+    "discriminative_power": "HIGH",
+    "status": "PASS"
+  },
+  "mi": {
+    "mi_scores": {
+      "years_experience": 0.156199545123489,
+      "projects_completed": 0.22507701914671152,
+      "certifications": 0.10757018821233988,
+      "python_score": 0.9488779406797927,
+      "java_score": 0.5904923520261383,
+      "javascript_score": 0.7594455217928626,
+      "sql_score": 0.7658188455555717,
+      "machine_learning_score": 0.5478748706018886,
+      "deep_learning_score": 0.6178864059820235,
+      "cloud_score": 0.6728810451184128,
+      "devops_score": 0.6515308382177243,
+      "cybersecurity_score": 0.876872463481889,
+      "data_analysis_score": 0.6424371761505157,
+      "database_score": 0.659703570567276,
+      "networking_score": 0.9993568438006593,
+      "mobile_score": 0.5419181714727355,
+      "game_dev_score": 0.2198422546952843,
+      "testing_score": 0.6089368548922529,
+      "business_analysis_score": 0.6014989279387968,
+      "product_management_score": 0.49218779659076484,
+      "ui_design_score": 0.8615827309800288,
+      "ux_research_score": 0.9911616749399532,
+      "communication_score": 0.3326975221915194,
+      "leadership_score": 0.2191869864066449,
+      "problem_solving_score": 0.29478253511269115,
+      "teamwork_score": 0.1871058765287854,
+      "agile_score": 0.4363560316587973,
+      "research_score": 0.8991004199933923,
+      "career_growth_score": 0.0012294729321782327
+    },
+    "top_10_features": {
+      "networking_score": 0.9993568438006593,
+      "ux_research_score": 0.9911616749399532,
+      "python_score": 0.9488779406797927,
+      "research_score": 0.8991004199933923,
+      "cybersecurity_score": 0.876872463481889,
+      "ui_design_score": 0.8615827309800288,
+      "sql_score": 0.7658188455555717,
+      "javascript_score": 0.7594455217928626,
+      "cloud_score": 0.6728810451184128,
+      "database_score": 0.659703570567276
+    },
+    "low_mi_features": [
+      "career_growth_score"
+    ],
+    "avg_mi_score": 0.548607306303142,
+    "status": "PASS"
+  },
+  "outliers": {
+    "outlier_results": {
+      "years_experience": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 0.0
+      },
+      "projects_completed": {
+        "z_score_outliers": 3,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 0.0
+      },
+      "certifications": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 0.0
+      },
+      "python_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 0.0
+      },
+      "java_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 3,
+        "outlier_percentage": 0.0
+      },
+      "javascript_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 16,
+        "outlier_percentage": 0.0
+      },
+      "sql_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 0.0
+      },
+      "machine_learning_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 71,
+        "modified_z_outliers": 71,
+        "outlier_percentage": 14.2
+      },
+      "deep_learning_score": {
+        "z_score_outliers": 23,
+        "iqr_outliers": 72,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 14.399999999999999
+      },
+      "cloud_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 29,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 5.800000000000001
+      },
+      "devops_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 37,
+        "modified_z_outliers": 25,
+        "outlier_percentage": 7.3999999999999995
+      },
+      "cybersecurity_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 37,
+        "modified_z_outliers": 48,
+        "outlier_percentage": 7.3999999999999995
+      },
+      "data_analysis_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 0.0
+      },
+      "database_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 0.0
+      },
+      "networking_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 72,
+        "outlier_percentage": 0.0
+      },
+      "mobile_score": {
+        "z_score_outliers": 23,
+        "iqr_outliers": 25,
+        "modified_z_outliers": 25,
+        "outlier_percentage": 5.0
+      },
+      "game_dev_score": {
+        "z_score_outliers": 25,
+        "iqr_outliers": 25,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 5.0
+      },
+      "testing_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 0.0
+      },
+      "business_analysis_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 47,
+        "modified_z_outliers": 31,
+        "outlier_percentage": 9.4
+      },
+      "product_management_score": {
+        "z_score_outliers": 25,
+        "iqr_outliers": 48,
+        "modified_z_outliers": 25,
+        "outlier_percentage": 9.6
+      },
+      "ui_design_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 25,
+        "modified_z_outliers": 41,
+        "outlier_percentage": 5.0
+      },
+      "ux_research_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 25,
+        "modified_z_outliers": 43,
+        "outlier_percentage": 5.0
+      },
+      "communication_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 0.0
+      },
+      "leadership_score": {
+        "z_score_outliers": 15,
+        "iqr_outliers": 15,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 3.0
+      },
+      "problem_solving_score": {
+        "z_score_outliers": 3,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 0.0
+      },
+      "teamwork_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 11,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 2.1999999999999997
+      },
+      "agile_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 0.0
+      },
+      "research_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 0.0
+      },
+      "career_growth_score": {
+        "z_score_outliers": 0,
+        "iqr_outliers": 0,
+        "modified_z_outliers": 0,
+        "outlier_percentage": 0.0
+      }
+    },
+    "total_outliers": 467,
+    "features_with_outliers": 13,
+    "outlier_percentage": 93.4,
+    "status": "WARNING"
+  },
+  "cluster": {
+    "silhouette_kmeans": 0.19785787482804604,
+    "silhouette_actual_classes": 0.16497330848966965,
+    "adjusted_rand_index": 0.6697676334200937,
+    "cluster_class_alignment": "GOOD",
+    "status": "PASS"
+  },
+  "feature_importance": {
+    "feature_importance": {
+      "years_experience": 0.00932481520084334,
+      "projects_completed": 0.009820847382269281,
+      "certifications": 0.009053246371324535,
+      "python_score": 0.03518721147612673,
+      "java_score": 0.037980049687133505,
+      "javascript_score": 0.05512988325741003,
+      "sql_score": 0.04287606178187091,
+      "machine_learning_score": 0.04211647114726545,
+      "deep_learning_score": 0.04689084643438122,
+      "cloud_score": 0.040450788465276576,
+      "devops_score": 0.04807575799361356,
+      "cybersecurity_score": 0.04810808522642872,
+      "data_analysis_score": 0.02831982712337306,
+      "database_score": 0.03967375479499926,
+      "networking_score": 0.05649183392114341,
+      "mobile_score": 0.04600216082660778,
+      "game_dev_score": 0.03535600041394616,
+      "testing_score": 0.059204485720183206,
+      "business_analysis_score": 0.05753162394147757,
+      "product_management_score": 0.034870849449265565,
+      "ui_design_score": 0.042008406597053884,
+      "ux_research_score": 0.06075357075115013,
+      "communication_score": 0.01177125249501664,
+      "leadership_score": 0.01793424515415911,
+      "problem_solving_score": 0.010232010651063285,
+      "teamwork_score": 0.003945904594686875,
+      "agile_score": 0.028658467687970993,
+      "research_score": 0.036651996375243225,
+      "career_growth_score": 0.00557954507871605
+    },
+    "top_10_features": {
+      "ux_research_score": 0.06075357075115013,
+      "testing_score": 0.059204485720183206,
+      "business_analysis_score": 0.05753162394147757,
+      "networking_score": 0.05649183392114341,
+      "javascript_score": 0.05512988325741003,
+      "cybersecurity_score": 0.04810808522642872,
+      "devops_score": 0.04807575799361356,
+      "deep_learning_score": 0.04689084643438122,
+      "mobile_score": 0.04600216082660778,
+      "sql_score": 0.04287606178187091
+    },
+    "bottom_5_features": {
+      "projects_completed": 0.009820847382269281,
+      "years_experience": 0.00932481520084334,
+      "certifications": 0.009053246371324535,
+      "career_growth_score": 0.00557954507871605,
+      "teamwork_score": 0.003945904594686875
+    },
+    "cv_accuracy_mean": 0.9620000000000001,
+    "cv_accuracy_std": 0.016000000000000014,
+    "model_performance": "GOOD",
+    "status": "PASS"
+  }
+}

@@ -1,4 +1,10 @@
 {
+  "metadata": {
+    "description": "Noise injection rules for generating realistic imperfect candidate profiles.",
+    "version": "2.0",
+    "last_updated": "2026-07-16",
+    "usage": "Used by synthetic data generator to introduce realistic imperfections in career profiles"
+  },
   "noise_generation_rules": {
     "description": "Realistic noise injection rules for generating imperfect candidate profiles without impossible combinations.",
     "noise_rate": {
@@ -117,7 +123,17 @@
       "Game Developer with no programming ability",
       "UI/UX Designer with zero design skill",
       "Database Administrator with no SQL ability",
-      "Network Engineer with no networking knowledge"
+      "Network Engineer with no networking knowledge",
+      "ML Engineer with no Python skill",
+      "Data Scientist with no Machine Learning",
+      "Frontend Developer with no JavaScript",
+      "Backend Developer with no database knowledge",
+      "DevOps Engineer with no Cloud experience",
+      "Cyber Security Analyst with no networking knowledge",
+      "Product Manager with no communication skills",
+      "Business Analyst with no data analysis ability",
+      "QA Engineer with no testing experience",
+      "Mobile App Developer with no mobile development skill"
     ],
     "realism_constraints": {
       "preserve_domain_fit": true,

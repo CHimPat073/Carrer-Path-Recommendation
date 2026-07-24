@@ -1,0 +1,75 @@
+# CareerPilot-AI Docker Compose
+# Local development and production orchestration
+
+services:
+  # Backend API
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: careerpilot-api
+    ports:
+      - "${API_PORT:-8000}:8000"
+    environment:
+      - MONGODB_URI=${MONGODB_URI:-mongodb://mongodb:27017/careerpilot}
+      - ENVIRONMENT=${ENVIRONMENT:-development}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - SECRET_KEY=${SECRET_KEY}
+    volumes:
+      - ./backend:/app/backend
+      - ./ml:/app/ml
+      - ./knowledge_base:/app/knowledge_base
+      - ./datasets:/app/datasets
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - careerpilot-network
+
+  # MongoDB Database
+  mongodb:
+    image: mongo:7.0
+    container_name: careerpilot-mongodb
+    ports:
+      - "${MONGODB_PORT:-27017}:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGODB_USER:-admin}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGODB_PASSWORD}
+    volumes:
+      - mongodb_data:/data/db
+      - mongodb_config:/data/configdb
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - careerpilot-network
+
+  # Frontend (optional - uncomment when ready)
+  # frontend:
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+  #   container_name: careerpilot-frontend
+  #   ports:
+  #     - "${FRONTEND_PORT:-3000}:3000"
+  #   environment:
+  #     - VITE_API_URL=http://api:8000
+  #   depends_on:
+  #     - api
+  #   restart: unless-stopped
+  #   networks:
+  #     - careerpilot-network
+
+networks:
+  careerpilot-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:
+    driver: local
+  mongodb_config:
+    driver: local

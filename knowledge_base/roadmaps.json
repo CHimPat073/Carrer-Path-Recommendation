@@ -1,3 +1,211 @@
 {
-  "roadmaps": []
+  "metadata": {
+    "description": "Career progression roadmaps for each role in CareerPilot AI.",
+    "version": "2.0",
+    "last_updated": "2026-07-16",
+    "total_careers": 20,
+    "usage": "Used for career path recommendations and skill gap analysis"
+  },
+  "roadmaps": [
+    {
+      "career": "Software Engineer",
+      "stages": [
+        {"level": "Junior Engineer", "experience_years": "0-2", "key_skills": ["Programming fundamentals", "Version control", "Testing basics", "Code reviews"], "typical_salary": "70k-90k"},
+        {"level": "Software Engineer", "experience_years": "2-4", "key_skills": ["System design", "Database", "API development", "Agile"], "typical_salary": "85k-110k"},
+        {"level": "Senior Engineer", "experience_years": "4-7", "key_skills": ["Architecture", "Mentoring", "Performance optimization", "Technical leadership"], "typical_salary": "110k-140k"},
+        {"level": "Staff Engineer", "experience_years": "7-10", "key_skills": ["Technical strategy", "Cross-team leadership", "Architecture governance"], "typical_salary": "140k-170k"},
+        {"level": "Engineering Manager", "experience_years": "8+", "key_skills": ["Team management", "Strategy", "Hiring", "Budget"], "typical_salary": "150k-200k"}
+      ]
+    },
+    {
+      "career": "Data Scientist",
+      "stages": [
+        {"level": "Junior Data Scientist", "experience_years": "0-2", "key_skills": ["Python", "SQL", "Statistics", "Basic ML"], "typical_salary": "70k-95k"},
+        {"level": "Data Scientist", "experience_years": "2-4", "key_skills": ["Machine Learning", "Data visualization", "Experimentation", "Business acumen"], "typical_salary": "95k-130k"},
+        {"level": "Senior Data Scientist", "experience_years": "4-7", "key_skills": ["Advanced ML", "MLOps", "Team leadership", "Research"], "typical_salary": "130k-165k"},
+        {"level": "Lead Data Scientist", "experience_years": "7-10", "key_skills": ["Strategic thinking", "Cross-functional collaboration", "Platform thinking"], "typical_salary": "165k-200k"},
+        {"level": "Principal Scientist", "experience_years": "10+", "key_skills": ["Research direction", "Organization impact", "Innovation"], "typical_salary": "200k-250k"}
+      ]
+    },
+    {
+      "career": "ML Engineer",
+      "stages": [
+        {"level": "Junior ML Engineer", "experience_years": "0-2", "key_skills": ["Python", "Machine Learning", "Model training", "API basics"], "typical_salary": "85k-110k"},
+        {"level": "ML Engineer", "experience_years": "2-4", "key_skills": ["Model deployment", "MLOps", "Data pipelines", "Software engineering"], "typical_salary": "110k-140k"},
+        {"level": "Senior ML Engineer", "experience_years": "4-7", "key_skills": ["Distributed training", "Model monitoring", "Feature stores", "Architecture"], "typical_salary": "140k-180k"},
+        {"level": "ML Platform Engineer", "experience_years": "7-10", "key_skills": ["Platform design", "Team leadership", "Infrastructure"], "typical_salary": "180k-220k"},
+        {"level": "AI Engineering Manager", "experience_years": "10+", "key_skills": ["Strategy", "Team building", "Innovation"], "typical_salary": "200k-280k"}
+      ]
+    },
+    {
+      "career": "DevOps Engineer",
+      "stages": [
+        {"level": "Junior DevOps", "experience_years": "0-2", "key_skills": ["Linux", "Scripting", "CI/CD basics", "Containerization"], "typical_salary": "70k-90k"},
+        {"level": "DevOps Engineer", "experience_years": "2-4", "key_skills": ["Kubernetes", "Cloud platforms", "IaC", "Monitoring"], "typical_salary": "90k-120k"},
+        {"level": "Senior DevOps Engineer", "experience_years": "4-7", "key_skills": ["Platform architecture", "Security automation", "SRE", "Team collaboration"], "typical_salary": "120k-160k"},
+        {"level": "Platform Engineer", "experience_years": "7-10", "key_skills": ["Infrastructure design", "Cost optimization", "Multi-cloud"], "typical_salary": "160k-190k"},
+        {"level": "SRE Lead", "experience_years": "10+", "key_skills": ["Reliability strategy", "Incident management", "Team leadership"], "typical_salary": "180k-220k"}
+      ]
+    },
+    {
+      "career": "Cloud Engineer",
+      "stages": [
+        {"level": "Junior Cloud Engineer", "experience_years": "0-2", "key_skills": ["Cloud platforms", "Networking basics", "Virtualization", "IaC basics"], "typical_salary": "75k-95k"},
+        {"level": "Cloud Engineer", "experience_years": "2-4", "key_skills": ["Multi-cloud", "Security", "Cost management", "Automation"], "typical_salary": "95k-130k"},
+        {"level": "Senior Cloud Engineer", "experience_years": "4-7", "key_skills": ["Architecture design", "Hybrid cloud", "Migration planning"], "typical_salary": "130k-170k"},
+        {"level": "Cloud Architect", "experience_years": "7-10", "key_skills": ["Enterprise architecture", "Strategy", "Governance"], "typical_salary": "170k-210k"},
+        {"level": "Principal Architect", "experience_years": "10+", "key_skills": ["Technical leadership", "Innovation", "Executive communication"], "typical_salary": "200k-280k"}
+      ]
+    },
+    {
+      "career": "Product Manager",
+      "stages": [
+        {"level": "Associate PM", "experience_years": "0-2", "key_skills": ["Requirements gathering", "Agile", "Data analysis", "Communication"], "typical_salary": "70k-90k"},
+        {"level": "Product Manager", "experience_years": "2-4", "key_skills": ["Roadmapping", "Stakeholder management", "User research", "Prioritization"], "typical_salary": "90k-130k"},
+        {"level": "Senior Product Manager", "experience_years": "4-7", "key_skills": ["Strategy", "Multi-team leadership", "P&L ownership"], "typical_salary": "130k-170k"},
+        {"level": "Director of Product", "experience_years": "7-10", "key_skills": ["Portfolio management", "Team building", "Business strategy"], "typical_salary": "170k-220k"},
+        {"level": "VP Product", "experience_years": "10+", "key_skills": ["Executive leadership", "Company strategy", "Board communication"], "typical_salary": "220k-350k"}
+      ]
+    },
+    {
+      "career": "UI/UX Designer",
+      "stages": [
+        {"level": "Junior Designer", "experience_years": "0-2", "key_skills": ["Wireframing", "Prototyping", "Visual design", "Design tools"], "typical_salary": "55k-75k"},
+        {"level": "UI/UX Designer", "experience_years": "2-4", "key_skills": ["User research", "Interaction design", "Design systems", "Usability testing"], "typical_salary": "75k-100k"},
+        {"level": "Senior Designer", "experience_years": "4-7", "key_skills": ["Design strategy", "Team leadership", "Cross-functional collaboration"], "typical_salary": "100k-135k"},
+        {"level": "Lead Designer", "experience_years": "7-10", "key_skills": ["Design vision", "Mentoring", "Process building"], "typical_salary": "135k-170k"},
+        {"level": "Design Director", "experience_years": "10+", "key_skills": ["Design leadership", "Company culture", "Executive presence"], "typical_salary": "170k-250k"}
+      ]
+    },
+    {
+      "career": "Cyber Security Analyst",
+      "stages": [
+        {"level": "Security Analyst", "experience_years": "0-2", "key_skills": ["Log analysis", "Threat detection", "SIEM", "Incident response"], "typical_salary": "60k-80k"},
+        {"level": "Cyber Security Analyst", "experience_years": "2-4", "key_skills": ["Vulnerability management", "Penetration testing", "Security tools", "Compliance"], "typical_salary": "80k-110k"},
+        {"level": "Senior Security Analyst", "experience_years": "4-7", "key_skills": ["Threat hunting", "Security architecture", "Team leadership"], "typical_salary": "110k-145k"},
+        {"level": "Security Engineer", "experience_years": "7-10", "key_skills": ["Security strategy", "Architecture", "Governance"], "typical_salary": "145k-180k"},
+        {"level": "Security Manager", "experience_years": "10+", "key_skills": ["CISO readiness", "Risk management", "Executive communication"], "typical_salary": "180k-250k"}
+      ]
+    },
+    {
+      "career": "Backend Developer",
+      "stages": [
+        {"level": "Junior Backend Developer", "experience_years": "0-2", "key_skills": ["Programming languages", "REST APIs", "SQL", "Git"], "typical_salary": "70k-90k"},
+        {"level": "Backend Developer", "experience_years": "2-4", "key_skills": ["Database design", "Caching", "Microservices", "Performance"], "typical_salary": "90k-120k"},
+        {"level": "Senior Backend Developer", "experience_years": "4-7", "key_skills": ["System architecture", "Distributed systems", "Mentoring"], "typical_salary": "120k-160k"},
+        {"level": "Tech Lead", "experience_years": "7-10", "key_skills": ["Technical direction", "Code review", "Architecture"], "typical_salary": "160k-200k"},
+        {"level": "Principal Engineer", "experience_years": "10+", "key_skills": ["Technical strategy", "Influencing", "Innovation"], "typical_salary": "200k-280k"}
+      ]
+    },
+    {
+      "career": "Frontend Developer",
+      "stages": [
+        {"level": "Junior Frontend Developer", "experience_years": "0-2", "key_skills": ["HTML", "CSS", "JavaScript", "Responsive design"], "typical_salary": "60k-80k"},
+        {"level": "Frontend Developer", "experience_years": "2-4", "key_skills": ["Frontend frameworks", "State management", "Performance", "Testing"], "typical_salary": "80k-110k"},
+        {"level": "Senior Frontend Developer", "experience_years": "4-7", "key_skills": ["Architecture", "Accessibility", "Web performance", "Mentoring"], "typical_salary": "110k-145k"},
+        {"level": "Frontend Architect", "experience_years": "7-10", "key_skills": ["Design systems", "Technical leadership", "Strategy"], "typical_salary": "145k-180k"},
+        {"level": "UI Engineering Lead", "experience_years": "10+", "key_skills": ["Platform thinking", "Team leadership", "Innovation"], "typical_salary": "180k-220k"}
+      ]
+    },
+    {
+      "career": "Business Analyst",
+      "stages": [
+        {"level": "Junior Business Analyst", "experience_years": "0-2", "key_skills": ["Requirements analysis", "Documentation", "Data analysis", "Excel"], "typical_salary": "50k-70k"},
+        {"level": "Business Analyst", "experience_years": "2-4", "key_skills": ["Process modeling", "SQL", "Stakeholder management", "Visualization"], "typical_salary": "70k-95k"},
+        {"level": "Senior Business Analyst", "experience_years": "4-7", "key_skills": ["Strategy", "Change management", "Advanced analytics"], "typical_salary": "95k-125k"},
+        {"level": "Product Owner", "experience_years": "7-10", "key_skills": ["Product ownership", "Sprint planning", "Backlog management"], "typical_salary": "125k-160k"},
+        {"level": "Business Systems Lead", "experience_years": "10+", "key_skills": ["Systems strategy", "Team leadership", "Vendor management"], "typical_salary": "160k-200k"}
+      ]
+    },
+    {
+      "career": "QA Engineer",
+      "stages": [
+        {"level": "Junior QA Engineer", "experience_years": "0-2", "key_skills": ["Test case design", "Bug tracking", "Manual testing", "Basic automation"], "typical_salary": "50k-70k"},
+        {"level": "QA Engineer", "experience_years": "2-4", "key_skills": ["Test automation", "API testing", "CI/CD integration", "Performance testing"], "typical_salary": "70k-95k"},
+        {"level": "Senior QA Engineer", "experience_years": "4-7", "key_skills": ["Test strategy", "Team leadership", "Quality metrics", "Security testing"], "typical_salary": "95k-125k"},
+        {"level": "Test Lead", "experience_years": "7-10", "key_skills": ["Quality assurance strategy", "Process improvement", "Tool selection"], "typical_salary": "125k-155k"},
+        {"level": "Quality Engineering Manager", "experience_years": "10+", "key_skills": ["Quality culture", "Team building", "Strategic planning"], "typical_salary": "155k-200k"}
+      ]
+    },
+    {
+      "career": "Database Administrator",
+      "stages": [
+        {"level": "Junior DBA", "experience_years": "0-2", "key_skills": ["SQL", "Backup/recovery", "Basic tuning", "Security basics"], "typical_salary": "60k-85k"},
+        {"level": "Database Administrator", "experience_years": "2-4", "key_skills": ["Performance tuning", "High availability", "Replication", "Cloud databases"], "typical_salary": "85k-115k"},
+        {"level": "Senior DBA", "experience_years": "4-7", "key_skills": ["Architecture", "Disaster recovery", "Automation", "Migration"], "typical_salary": "115k-150k"},
+        {"level": "Database Architect", "experience_years": "7-10", "key_skills": ["Platform design", "Strategy", "Governance"], "typical_salary": "150k-185k"},
+        {"level": "Data Platform Lead", "experience_years": "10+", "key_skills": ["Data strategy", "Team leadership", "Innovation"], "typical_salary": "185k-230k"}
+      ]
+    },
+    {
+      "career": "Ethical Hacker",
+      "stages": [
+        {"level": "Junior Penetration Tester", "experience_years": "0-2", "key_skills": ["Penetration testing", "Networking", "Scripting", "Web security"], "typical_salary": "60k-85k"},
+        {"level": "Ethical Hacker", "experience_years": "2-4", "key_skills": ["Advanced penetration testing", "Exploit development", "Cloud security", "Report writing"], "typical_salary": "85k-120k"},
+        {"level": "Senior Penetration Tester", "experience_years": "4-7", "key_skills": ["Red team operations", "Threat modeling", "Research", "Mentoring"], "typical_salary": "120k-160k"},
+        {"level": "Security Consultant", "experience_years": "7-10", "key_skills": ["Security strategy", "Architecture review", "Client management"], "typical_salary": "160k-200k"},
+        {"level": "Red Team Lead", "experience_years": "10+", "key_skills": ["Team leadership", "Advanced research", "Executive communication"], "typical_salary": "200k-280k"}
+      ]
+    },
+    {
+      "career": "Network Engineer",
+      "stages": [
+        {"level": "Junior Network Engineer", "experience_years": "0-2", "key_skills": ["Routing", "Switching", "TCP/IP", "Firewall basics"], "typical_salary": "55k-75k"},
+        {"level": "Network Engineer", "experience_years": "2-4", "key_skills": ["Network design", "VPN", "Wireless", "Automation"], "typical_salary": "75k-100k"},
+        {"level": "Senior Network Engineer", "experience_years": "4-7", "key_skills": ["SD-WAN", "Cloud networking", "Security", "Architecture"], "typical_salary": "100k-135k"},
+        {"level": "Network Architect", "experience_years": "7-10", "key_skills": ["Enterprise architecture", "Multi-site design", "Strategy"], "typical_salary": "135k-170k"},
+        {"level": "Infrastructure Lead", "experience_years": "10+", "key_skills": ["Infrastructure strategy", "Team leadership", "Innovation"], "typical_salary": "170k-220k"}
+      ]
+    },
+    {
+      "career": "Mobile App Developer",
+      "stages": [
+        {"level": "Junior Mobile Developer", "experience_years": "0-2", "key_skills": ["Mobile SDK", "UI implementation", "API consumption", "Debugging"], "typical_salary": "65k-85k"},
+        {"level": "Mobile App Developer", "experience_years": "2-4", "key_skills": ["Cross-platform", "Performance", "Offline storage", "Push notifications"], "typical_salary": "85k-115k"},
+        {"level": "Senior Mobile Developer", "experience_years": "4-7", "key_skills": ["Architecture", "App store optimization", "Security", "Mentoring"], "typical_salary": "115k-150k"},
+        {"level": "Mobile Architect", "experience_years": "7-10", "key_skills": ["Platform strategy", "Design systems", "Team leadership"], "typical_salary": "150k-185k"},
+        {"level": "Engineering Lead", "experience_years": "10+", "key_skills": ["Technical leadership", "Innovation", "Strategy"], "typical_salary": "185k-230k"}
+      ]
+    },
+    {
+      "career": "Full Stack Developer",
+      "stages": [
+        {"level": "Junior Full Stack Developer", "experience_years": "0-2", "key_skills": ["Frontend", "Backend basics", "Database", "Git"], "typical_salary": "65k-85k"},
+        {"level": "Full Stack Developer", "experience_years": "2-4", "key_skills": ["Full stack", "API design", "DevOps basics", "Deployment"], "typical_salary": "85k-120k"},
+        {"level": "Senior Full Stack Developer", "experience_years": "4-7", "key_skills": ["Architecture", "System design", "Mentoring", "Performance"], "typical_salary": "120k-160k"},
+        {"level": "Tech Lead", "experience_years": "7-10", "key_skills": ["Technical direction", "Cross-functional", "Architecture"], "typical_salary": "160k-200k"},
+        {"level": "Engineering Manager", "experience_years": "10+", "key_skills": ["Team leadership", "Strategy", "Hiring"], "typical_salary": "200k-280k"}
+      ]
+    },
+    {
+      "career": "Data Engineer",
+      "stages": [
+        {"level": "Junior Data Engineer", "experience_years": "0-2", "key_skills": ["SQL", "Python", "ETL basics", "Cloud basics"], "typical_salary": "75k-100k"},
+        {"level": "Data Engineer", "experience_years": "2-4", "key_skills": ["Spark", "Data pipelines", "Streaming", "Cloud data services"], "typical_salary": "100k-135k"},
+        {"level": "Senior Data Engineer", "experience_years": "4-7", "key_skills": ["Architecture", "Data modeling", "Optimization", "Team collaboration"], "typical_salary": "135k-175k"},
+        {"level": "Data Platform Engineer", "experience_years": "7-10", "key_skills": ["Platform design", "Strategy", "Governance"], "typical_salary": "175k-220k"},
+        {"level": "Data Architect", "experience_years": "10+", "key_skills": ["Enterprise architecture", "Innovation", "Leadership"], "typical_salary": "220k-300k"}
+      ]
+    },
+    {
+      "career": "AI Research Engineer",
+      "stages": [
+        {"level": "Junior Research Engineer", "experience_years": "0-2", "key_skills": ["Deep Learning", "PyTorch", "Research methods", "Python"], "typical_salary": "90k-120k"},
+        {"level": "AI Research Engineer", "experience_years": "2-4", "key_skills": ["Advanced ML", "Transformers", "Research publications", "Experimentation"], "typical_salary": "120k-160k"},
+        {"level": "Senior Research Engineer", "experience_years": "4-7", "key_skills": ["Novel research", "Distributed training", "SOTA models", "Mentoring"], "typical_salary": "160k-210k"},
+        {"level": "Research Scientist", "experience_years": "7-10", "key_skills": ["Research direction", "Innovation", "Publications", "Team building"], "typical_salary": "210k-280k"},
+        {"level": "Principal Scientist", "experience_years": "10+", "key_skills": ["Research vision", "Executive communication", "Company impact"], "typical_salary": "280k-400k"}
+      ]
+    },
+    {
+      "career": "Game Developer",
+      "stages": [
+        {"level": "Junior Game Developer", "experience_years": "0-2", "key_skills": ["Game programming", "Game engines", "Graphics basics", "Math"], "typical_salary": "55k-80k"},
+        {"level": "Game Developer", "experience_years": "2-4", "key_skills": ["Game mechanics", "Performance optimization", "Multiplayer", "Tools"], "typical_salary": "80k-110k"},
+        {"level": "Senior Game Developer", "experience_years": "4-7", "key_skills": ["Architecture", "3D rendering", "AI for games", "Mentoring"], "typical_salary": "110k-150k"},
+        {"level": "Technical Lead", "experience_years": "7-10", "key_skills": ["Technical direction", "Engine development", "Team leadership"], "typical_salary": "150k-190k"},
+        {"level": "Principal Engineer", "experience_years": "10+", "key_skills": ["Technical strategy", "Innovation", "Industry leadership"], "typical_salary": "190k-250k"}
+      ]
+    }
+  ]
 }

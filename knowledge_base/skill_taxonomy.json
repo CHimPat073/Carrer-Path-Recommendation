@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "description": "Complete taxonomy of all skills used in CareerPilot AI system.",
+    "version": "1.0",
+    "last_updated": "2026-07-16",
+    "usage": "Used for skill mapping, synonym resolution, and skill gap analysis"
+  },
+  "skill_categories": {
+    "programming_languages": {
+      "description": "Programming and scripting languages",
+      "skills": [
+        {"id": "python", "name": "Python", "aliases": ["Python or R"]},
+        {"id": "java", "name": "Java", "aliases": ["Backend programming languages"]},
+        {"id": "javascript", "name": "JavaScript", "aliases": ["Frontend technologies"]},
+        {"id": "sql", "name": "SQL", "aliases": ["Databases and SQL"]},
+        {"id": "cplusplus", "name": "C++", "aliases": []},
+        {"id": "csharp", "name": "C#", "aliases": []},
+        {"id": "go", "name": "Go", "aliases": ["Golang"]},
+        {"id": "rust", "name": "Rust", "aliases": []},
+        {"id": "typescript", "name": "TypeScript", "aliases": []},
+        {"id": "scala", "name": "Scala", "aliases": []}
+      ]
+    },
+    "frameworks_libraries": {
+      "description": "Frameworks and libraries",
+      "skills": [
+        {"id": "react", "name": "React", "aliases": ["Frontend frameworks"]},
+        {"id": "angular", "name": "Angular", "aliases": []},
+        {"id": "vue", "name": "Vue.js", "aliases": []},
+        {"id": "nodejs", "name": "Node.js", "aliases": []},
+        {"id": "django", "name": "Django", "aliases": []},
+        {"id": "flask", "name": "Flask", "aliases": []},
+        {"id": "spring", "name": "Spring", "aliases": []},
+        {"id": "pytorch", "name": "PyTorch", "aliases": ["PyTorch or TensorFlow"]},
+        {"id": "tensorflow", "name": "TensorFlow", "aliases": []},
+        {"id": "keras", "name": "Keras", "aliases": []}
+      ]
+    },
+    "data_science_ml": {
+      "description": "Data science and machine learning skills",
+      "skills": [
+        {"id": "machine_learning", "name": "Machine Learning", "aliases": ["ML"]},
+        {"id": "deep_learning", "name": "Deep Learning", "aliases": ["Neural Networks"]},
+        {"id": "data_analysis", "name": "Data Analysis", "aliases": ["Analytics", "Data analytics"]},
+        {"id": "statistics", "name": "Statistics", "aliases": ["Statistical analysis"]},
+        {"id": "nlp", "name": "NLP", "aliases": ["Natural Language Processing"]},
+        {"id": "computer_vision", "name": "Computer Vision", "aliases": ["CV", "Image processing"]},
+        {"id": "reinforcement_learning", "name": "Reinforcement Learning", "aliases": ["RL"]}
+      ]
+    },
+    "cloud_infrastructure": {
+      "description": "Cloud and infrastructure skills",
+      "skills": [
+        {"id": "cloud", "name": "Cloud", "aliases": ["Cloud platforms", "AWS", "Azure", "GCP"]},
+        {"id": "devops", "name": "DevOps", "aliases": ["CI/CD", "Infrastructure as Code"]},
+        {"id": "kubernetes", "name": "Kubernetes", "aliases": ["K8s"]},
+        {"id": "docker", "name": "Docker", "aliases": ["Containerization"]},
+        {"id": "aws", "name": "AWS", "aliases": []},
+        {"id": "azure", "name": "Azure", "aliases": []},
+        {"id": "gcp", "name": "GCP", "aliases": []}
+      ]
+    },
+    "database": {
+      "description": "Database and data storage skills",
+      "skills": [
+        {"id": "database", "name": "Database", "aliases": ["Database administration", "DB"]},
+        {"id": "nosql", "name": "NoSQL", "aliases": []},
+        {"id": "mongodb", "name": "MongoDB", "aliases": []},
+        {"id": "postgresql", "name": "PostgreSQL", "aliases": []},
+        {"id": "mysql", "name": "MySQL", "aliases": []},
+        {"id": "redis", "name": "Redis", "aliases": []}
+      ]
+    },
+    "security": {
+      "description": "Cybersecurity skills",
+      "skills": [
+        {"id": "cybersecurity", "name": "Cybersecurity", "aliases": ["Security", "InfoSec"]},
+        {"id": "penetration_testing", "name": "Penetration Testing", "aliases": ["Pen testing", "Pentest"]},
+        {"id": "network_security", "name": "Network Security", "aliases": []},
+        {"id": "incident_response", "name": "Incident Response", "aliases": []},
+        {"id": "siem", "name": "SIEM", "aliases": []}
+      ]
+    },
+    "networking": {
+      "description": "Networking skills",
+      "skills": [
+        {"id": "networking", "name": "Networking", "aliases": ["Network engineering"]},
+        {"id": "tcpip", "name": "TCP/IP", "aliases": []},
+        {"id": "vpn", "name": "VPN", "aliases": []},
+        {"id": "firewall", "name": "Firewalls", "aliases": []},
+        {"id": "sdwan", "name": "SD-WAN", "aliases": []}
+      ]
+    },
+    "mobile_game": {
+      "description": "Mobile and game development skills",
+      "skills": [
+        {"id": "mobile_development", "name": "Mobile Development", "aliases": ["Mobile app development"]},
+        {"id": "ios", "name": "iOS", "aliases": []},
+        {"id": "android", "name": "Android", "aliases": []},
+        {"id": "reactnative", "name": "React Native", "aliases": []},
+        {"id": "flutter", "name": "Flutter", "aliases": []},
+        {"id": "game_development", "name": "Game Development", "aliases": ["Game programming"]},
+        {"id": "unity", "name": "Unity", "aliases": []},
+        {"id": "unreal", "name": "Unreal Engine", "aliases": []}
+      ]
+    },
+    "design": {
+      "description": "Design and UX skills",
+      "skills": [
+        {"id": "ui_design", "name": "UI Design", "aliases": ["User Interface", "Interface design"]},
+        {"id": "ux_research", "name": "UX Research", "aliases": ["User research"]},
+        {"id": "figma", "name": "Figma", "aliases": []},
+        {"id": "wireframing", "name": "Wireframing", "aliases": []},
+        {"id": "prototyping", "name": "Prototyping", "aliases": []},
+        {"id": "design_systems", "name": "Design Systems", "aliases": []}
+      ]
+    },
+    "business_product": {
+      "description": "Business and product management skills",
+      "skills": [
+        {"id": "product_management", "name": "Product Management", "aliases": ["PM"]},
+        {"id": "business_analysis", "name": "Business Analysis", "aliases": ["BA", "Requirements analysis"]},
+        {"id": "agile", "name": "Agile", "aliases": ["Scrum", "Kanban"]},
+        {"id": "jira", "name": "Jira", "aliases": []},
+        {"id": "roadmapping", "name": "Roadmapping", "aliases": []}
+      ]
+    },
+    "soft_skills": {
+      "description": "Interpersonal and professional skills",
+      "skills": [
+        {"id": "communication", "name": "Communication", "aliases": ["Written communication", "Verbal communication"]},
+        {"id": "leadership", "name": "Leadership", "aliases": ["Team leadership"]},
+        {"id": "problem_solving", "name": "Problem Solving", "aliases": ["Analytical thinking"]},
+        {"id": "teamwork", "name": "Teamwork", "aliases": ["Collaboration"]},
+        {"id": "research", "name": "Research", "aliases": ["Research methods"]},
+        {"id": "critical_thinking", "name": "Critical Thinking", "aliases": []},
+        {"id": "adaptability", "name": "Adaptability", "aliases": ["Flexibility"]}
+      ]
+    },
+    "quality_testing": {
+      "description": "Quality assurance and testing skills",
+      "skills": [
+        {"id": "testing", "name": "Testing", "aliases": ["Software testing", "QA"]},
+        {"id": "test_automation", "name": "Test Automation", "aliases": []},
+        {"id": "selenium", "name": "Selenium", "aliases": []},
+        {"id": "performance_testing", "name": "Performance Testing", "aliases": []},
+        {"id": "security_testing", "name": "Security Testing", "aliases": []}
+      ]
+    }
+  },
+  "skill_relationships": {
+    "prerequisites": {
+      "machine_learning": ["python", "statistics", "data_analysis"],
+      "deep_learning": ["machine_learning", "python", "linear_algebra"],
+      "data_engineer": ["sql", "python", "cloud"],
+      "ml_engineer": ["machine_learning", "python", "devops"],
+      "data_scientist": ["machine_learning", "python", "statistics"],
+      "ai_research_engineer": ["deep_learning", "pytorch", "research"]
+    },
+    "commonly_together": {
+      "python": ["machine_learning", "data_analysis", "deep_learning"],
+      "java": ["spring", "database"],
+      "javascript": ["react", "nodejs", "typescript"],
+      "cloud": ["devops", "kubernetes", "aws"],
+      "sql": ["database", "data_analysis"],
+      "cybersecurity": ["networking", "penetration_testing"],
+      "mobile_development": ["ios", "android", "ui_design"]
+    }
+  }
+}

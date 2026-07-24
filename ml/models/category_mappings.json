@@ -1,0 +1,37 @@
+{
+  "education_level": [
+    "Associate",
+    "Bachelor",
+    "High School",
+    "Master",
+    "PhD"
+  ],
+  "country": [
+    "Australia",
+    "Canada",
+    "Germany",
+    "India",
+    "UK",
+    "USA"
+  ],
+  "industry": [
+    "Consulting",
+    "Education",
+    "Finance",
+    "Gaming",
+    "Healthcare",
+    "Retail",
+    "Technology"
+  ],
+  "employment_type": [
+    "Contract",
+    "Freelance",
+    "Full-time",
+    "Part-time"
+  ],
+  "remote_preference": [
+    "Hybrid",
+    "On-site",
+    "Remote"
+  ]
+}

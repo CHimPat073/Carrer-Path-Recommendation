@@ -1,0 +1,26 @@
+                        precision    recall  f1-score   support
+
+  AI Research Engineer     0.0369    0.0533    0.0436       150
+     Backend Developer     0.0396    0.0533    0.0455       150
+      Business Analyst     0.0462    0.0533    0.0495       150
+        Cloud Engineer     0.0462    0.0533    0.0495       150
+Cyber Security Analyst     0.0374    0.0467    0.0415       150
+         Data Engineer     0.0126    0.0133    0.0129       150
+        Data Scientist     0.0460    0.0533    0.0494       150
+Database Administrator     0.0452    0.0467    0.0459       150
+       DevOps Engineer     0.0569    0.0467    0.0513       150
+        Ethical Hacker     0.0398    0.0467    0.0429       150
+    Frontend Developer     0.0567    0.0533    0.0550       150
+  Full Stack Developer     0.0352    0.0333    0.0342       150
+        Game Developer     0.0556    0.0467    0.0507       150
+           ML Engineer     0.0420    0.0333    0.0372       150
+  Mobile App Developer     0.0473    0.0467    0.0470       150
+      Network Engineer     0.0084    0.0067    0.0074       150
+       Product Manager     0.0259    0.0200    0.0226       150
+           QA Engineer     0.0250    0.0200    0.0222       150
+     Software Engineer     0.0588    0.0467    0.0520       150
+        UI/UX Designer     0.0360    0.0267    0.0307       150
+
+              accuracy                         0.0400      3000
+             macro avg     0.0399    0.0400    0.0396      3000
+          weighted avg     0.0399    0.0400    0.0396      3000

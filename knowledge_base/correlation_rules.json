@@ -1,4 +1,11 @@
 {
+  "metadata": {
+    "description": "Correlation rules defining realistic feature relationships for career profile generation and scoring.",
+    "version": "2.0",
+    "last_updated": "2026-07-16",
+    "total_general_rules": 15,
+    "total_careers_with_rules": 20
+  },
   "correlation_rules": {
     "description": "Realistic feature correlation rules for career profile generation and scoring.",
     "rules": [
@@ -15,19 +22,19 @@
         "note": "Deep Learning depends heavily on Machine Learning foundations."
       },
       {
-        "feature_pair": ["Leadership", "Years Experience"],
+        "feature_pair": ["Leadership", "years_experience"],
         "relationship": "positive",
         "strength": 0.84,
         "note": "Leadership increases with experience."
       },
       {
-        "feature_pair": ["Projects Completed", "Years Experience"],
+        "feature_pair": ["Projects Completed", "years_experience"],
         "relationship": "strong_positive",
         "strength": 0.91,
         "note": "Projects completed increase with experience."
       },
       {
-        "feature_pair": ["Communication", "Years Experience"],
+        "feature_pair": ["Communication", "years_experience"],
         "relationship": "moderate_positive",
         "strength": 0.72,
         "note": "Communication increases slightly with seniority."
@@ -87,7 +94,7 @@
         "note": "Game development requires strong programming fundamentals."
       },
       {
-        "feature_pair": ["Problem Solving", "Years Experience"],
+        "feature_pair": ["Problem Solving", "years_experience"],
         "relationship": "positive",
         "strength": 0.76,
         "note": "Problem-solving maturity improves with experience."
@@ -99,7 +106,7 @@
         "rules": [
           ["Machine Learning", "Python", "strong_positive"],
           ["Deep Learning", "Machine Learning", "strong_positive"],
-          ["Research", "Years Experience", "positive"]
+          ["Research", "years_experience", "positive"]
         ]
       },
       {
@@ -107,14 +114,14 @@
         "rules": [
           ["Machine Learning", "Python", "strong_positive"],
           ["Data Analysis", "SQL", "positive"],
-          ["Research", "Years Experience", "positive"]
+          ["Research", "years_experience", "positive"]
         ]
       },
       {
         "career": "Backend Developer",
         "rules": [
           ["Database", "SQL", "strong_positive"],
-          ["Problem Solving", "Years Experience", "positive"],
+          ["Problem Solving", "years_experience", "positive"],
           ["Cloud", "DevOps", "positive"]
         ]
       },
@@ -122,15 +129,15 @@
         "career": "Frontend Developer",
         "rules": [
           ["JavaScript", "UI Design", "positive"],
-          ["Communication", "Years Experience", "positive"],
+          ["Communication", "years_experience", "positive"],
           ["UX Research", "UI Design", "positive"]
         ]
       },
       {
         "career": "Product Manager",
         "rules": [
-          ["Communication", "Years Experience", "positive"],
-          ["Leadership", "Years Experience", "positive"],
+          ["Communication", "years_experience", "positive"],
+          ["Leadership", "years_experience", "positive"],
           ["Business Analysis", "Product Management", "strong_positive"]
         ]
       },
@@ -139,15 +146,119 @@
         "rules": [
           ["Cloud", "DevOps", "strong_positive"],
           ["Networking", "Cloud", "positive"],
-          ["Problem Solving", "Years Experience", "positive"]
+          ["Problem Solving", "years_experience", "positive"]
         ]
       },
       {
         "career": "UI/UX Designer",
         "rules": [
           ["UI Design", "UX Research", "strong_positive"],
-          ["Communication", "Years Experience", "positive"],
+          ["Communication", "years_experience", "positive"],
           ["Research", "UI Design", "positive"]
+        ]
+      },
+      {
+        "career": "Software Engineer",
+        "rules": [
+          ["Problem Solving", "years_experience", "positive"],
+          ["Testing", "years_experience", "positive"],
+          ["JavaScript", "Java", "positive"]
+        ]
+      },
+      {
+        "career": "Full Stack Developer",
+        "rules": [
+          ["JavaScript", "Python", "positive"],
+          ["Database", "years_experience", "positive"],
+          ["DevOps", "Cloud", "positive"]
+        ]
+      },
+      {
+        "career": "Mobile App Developer",
+        "rules": [
+          ["Mobile Development", "UI Design", "positive"],
+          ["Mobile Development", "years_experience", "positive"],
+          ["Java", "Mobile Development", "strong_positive"]
+        ]
+      },
+      {
+        "career": "Data Engineer",
+        "rules": [
+          ["SQL", "Database", "strong_positive"],
+          ["Python", "years_experience", "positive"],
+          ["Cloud", "DevOps", "positive"]
+        ]
+      },
+      {
+        "career": "AI Research Engineer",
+        "rules": [
+          ["Deep Learning", "Machine Learning", "strong_positive"],
+          ["Research", "years_experience", "positive"],
+          ["Python", "Deep Learning", "strong_positive"]
+        ]
+      },
+      {
+        "career": "DevOps Engineer",
+        "rules": [
+          ["DevOps", "Cloud", "strong_positive"],
+          ["years_experience", "Leadership", "positive"],
+          ["Networking", "Cloud", "positive"]
+        ]
+      },
+      {
+        "career": "Cyber Security Analyst",
+        "rules": [
+          ["Cybersecurity", "Networking", "strong_positive"],
+          ["years_experience", "Research", "positive"],
+          ["Python", "Cybersecurity", "positive"]
+        ]
+      },
+      {
+        "career": "Ethical Hacker",
+        "rules": [
+          ["Cybersecurity", "Networking", "strong_positive"],
+          ["Python", "Cybersecurity", "strong_positive"],
+          ["years_experience", "Research", "positive"]
+        ]
+      },
+      {
+        "career": "Network Engineer",
+        "rules": [
+          ["Networking", "years_experience", "positive"],
+          ["Cloud", "Networking", "positive"],
+          ["Cybersecurity", "Networking", "positive"]
+        ]
+      },
+      {
+        "career": "Business Analyst",
+        "rules": [
+          ["Business Analysis", "Communication", "strong_positive"],
+          ["Data Analysis", "SQL", "positive"],
+          ["years_experience", "Leadership", "positive"]
+        ]
+      },
+      {
+        "career": "QA Engineer",
+        "rules": [
+          ["Testing", "years_experience", "positive"],
+          ["Communication", "Testing", "positive"],
+          ["Python", "Testing", "positive"]
+        ]
+      },
+      {
+        "career": "Database Administrator",
+        "rules": [
+          ["Database", "SQL", "strong_positive"],
+          ["years_experience", "Database", "positive"],
+          ["Cloud", "Database", "positive"]
+        ]
+      },
+      {
+        "career": "Game Developer",
+        "rules": [
+          ["Game Development", "years_experience", "positive"],
+          ["Python", "Game Development", "positive"],
+          ["UI Design", "Game Development", "positive"]
         ]
       }
     ]

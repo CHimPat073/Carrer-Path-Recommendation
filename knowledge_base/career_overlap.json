@@ -1,4 +1,11 @@
 {
+  "metadata": {
+    "description": "Career similarity matrix and overlap rules for synthetic data generation.",
+    "version": "2.0",
+    "last_updated": "2026-07-16",
+    "total_careers": 20,
+    "usage": "Used to determine which careers can share feature values during synthetic data generation"
+  },
   "career_similarity_matrix": [
     {
       "career": "Software Engineer",

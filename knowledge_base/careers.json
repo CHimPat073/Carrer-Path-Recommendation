@@ -1,3 +1,189 @@
 {
-  "careers": []
+  "metadata": {
+    "description": "Basic career information catalog for CareerPilot AI system.",
+    "version": "2.0",
+    "last_updated": "2026-07-16",
+    "total_careers": 20,
+    "usage": "Used for career lookup, API responses, and basic system references"
+  },
+  "careers": [
+    {
+      "id": "software_engineer",
+      "name": "Software Engineer",
+      "category": "engineering",
+      "salary_range": {"min": 85000, "max": 160000},
+      "demand_level": "very_high",
+      "difficulty": "moderate_to_high"
+    },
+    {
+      "id": "backend_developer",
+      "name": "Backend Developer",
+      "category": "engineering",
+      "salary_range": {"min": 90000, "max": 180000},
+      "demand_level": "very_high",
+      "difficulty": "high"
+    },
+    {
+      "id": "frontend_developer",
+      "name": "Frontend Developer",
+      "category": "engineering",
+      "salary_range": {"min": 80000, "max": 150000},
+      "demand_level": "high",
+      "difficulty": "moderate"
+    },
+    {
+      "id": "full_stack_developer",
+      "name": "Full Stack Developer",
+      "category": "engineering",
+      "salary_range": {"min": 95000, "max": 170000},
+      "demand_level": "high",
+      "difficulty": "high"
+    },
+    {
+      "id": "mobile_app_developer",
+      "name": "Mobile App Developer",
+      "category": "engineering",
+      "salary_range": {"min": 85000, "max": 160000},
+      "demand_level": "high",
+      "difficulty": "moderate_to_high"
+    },
+    {
+      "id": "data_scientist",
+      "name": "Data Scientist",
+      "category": "data_ai",
+      "salary_range": {"min": 95000, "max": 180000},
+      "demand_level": "very_high",
+      "difficulty": "high"
+    },
+    {
+      "id": "ml_engineer",
+      "name": "ML Engineer",
+      "category": "data_ai",
+      "salary_range": {"min": 110000, "max": 220000},
+      "demand_level": "very_high",
+      "difficulty": "high"
+    },
+    {
+      "id": "data_engineer",
+      "name": "Data Engineer",
+      "category": "data_ai",
+      "salary_range": {"min": 100000, "max": 190000},
+      "demand_level": "very_high",
+      "difficulty": "high"
+    },
+    {
+      "id": "ai_research_engineer",
+      "name": "AI Research Engineer",
+      "category": "data_ai",
+      "salary_range": {"min": 120000, "max": 250000},
+      "demand_level": "high",
+      "difficulty": "very_high"
+    },
+    {
+      "id": "devops_engineer",
+      "name": "DevOps Engineer",
+      "category": "platform_infra",
+      "salary_range": {"min": 100000, "max": 190000},
+      "demand_level": "very_high",
+      "difficulty": "high"
+    },
+    {
+      "id": "cloud_engineer",
+      "name": "Cloud Engineer",
+      "category": "platform_infra",
+      "salary_range": {"min": 105000, "max": 200000},
+      "demand_level": "very_high",
+      "difficulty": "high"
+    },
+    {
+      "id": "cyber_security_analyst",
+      "name": "Cyber Security Analyst",
+      "category": "platform_infra",
+      "salary_range": {"min": 80000, "max": 160000},
+      "demand_level": "very_high",
+      "difficulty": "high"
+    },
+    {
+      "id": "ethical_hacker",
+      "name": "Ethical Hacker",
+      "category": "platform_infra",
+      "salary_range": {"min": 95000, "max": 190000},
+      "demand_level": "high",
+      "difficulty": "very_high"
+    },
+    {
+      "id": "network_engineer",
+      "name": "Network Engineer",
+      "category": "platform_infra",
+      "salary_range": {"min": 75000, "max": 150000},
+      "demand_level": "moderate_to_high",
+      "difficulty": "moderate"
+    },
+    {
+      "id": "ui_ux_designer",
+      "name": "UI/UX Designer",
+      "category": "product_design",
+      "salary_range": {"min": 75000, "max": 145000},
+      "demand_level": "high",
+      "difficulty": "moderate"
+    },
+    {
+      "id": "product_manager",
+      "name": "Product Manager",
+      "category": "product_design",
+      "salary_range": {"min": 110000, "max": 220000},
+      "demand_level": "high",
+      "difficulty": "high"
+    },
+    {
+      "id": "business_analyst",
+      "name": "Business Analyst",
+      "category": "product_design",
+      "salary_range": {"min": 70000, "max": 135000},
+      "demand_level": "high",
+      "difficulty": "moderate"
+    },
+    {
+      "id": "qa_engineer",
+      "name": "QA Engineer",
+      "category": "engineering",
+      "salary_range": {"min": 70000, "max": 130000},
+      "demand_level": "moderate_to_high",
+      "difficulty": "moderate"
+    },
+    {
+      "id": "database_administrator",
+      "name": "Database Administrator",
+      "category": "platform_infra",
+      "salary_range": {"min": 85000, "max": 160000},
+      "demand_level": "moderate_to_high",
+      "difficulty": "high"
+    },
+    {
+      "id": "game_developer",
+      "name": "Game Developer",
+      "category": "engineering",
+      "salary_range": {"min": 80000, "max": 170000},
+      "demand_level": "moderate",
+      "difficulty": "high"
+    }
+  ],
+  "career_categories": {
+    "engineering": {
+      "description": "Software development and engineering roles",
+      "careers": ["software_engineer", "backend_developer", "frontend_developer", "full_stack_developer", "mobile_app_developer", "qa_engineer", "game_developer"]
+    },
+    "data_ai": {
+      "description": "Data science, machine learning, and AI roles",
+      "careers": ["data_scientist", "ml_engineer", "data_engineer", "ai_research_engineer"]
+    },
+    "platform_infra": {
+      "description": "Platform, infrastructure, and security roles",
+      "careers": ["devops_engineer", "cloud_engineer", "cyber_security_analyst", "ethical_hacker", "network_engineer", "database_administrator"]
+    },
+    "product_design": {
+      "description": "Product management and design roles",
+      "careers": ["ui_ux_designer", "product_manager", "business_analyst"]
+    }
+  }
 }

@@ -1,0 +1,221 @@
+{
+  "features": [
+    {
+      "name": "years_experience",
+      "display_name": "Years of Experience",
+      "importance": 0.03921355111456964
+    },
+    {
+      "name": "projects_completed",
+      "display_name": "Projects Completed",
+      "importance": 0.045056080421166635
+    },
+    {
+      "name": "certifications",
+      "display_name": "Certifications",
+      "importance": 0.030074736362639246
+    },
+    {
+      "name": "python_score",
+      "display_name": "Python",
+      "importance": 0.030129545576211524
+    },
+    {
+      "name": "java_score",
+      "display_name": "Java",
+      "importance": 0.03007732361818731
+    },
+    {
+      "name": "javascript_score",
+      "display_name": "JavaScript",
+      "importance": 0.029183148979994068
+    },
+    {
+      "name": "sql_score",
+      "display_name": "SQL",
+      "importance": 0.03025647022995238
+    },
+    {
+      "name": "machine_learning_score",
+      "display_name": "Machine Learning",
+      "importance": 0.03013932738328466
+    },
+    {
+      "name": "deep_learning_score",
+      "display_name": "Deep Learning",
+      "importance": 0.02985703965709509
+    },
+    {
+      "name": "cloud_score",
+      "display_name": "Cloud Computing",
+      "importance": 0.0303538746969404
+    },
+    {
+      "name": "devops_score",
+      "display_name": "DevOps",
+      "importance": 0.0293415881900992
+    },
+    {
+      "name": "cybersecurity_score",
+      "display_name": "Cybersecurity",
+      "importance": 0.02975983120934549
+    },
+    {
+      "name": "data_analysis_score",
+      "display_name": "Data Analysis",
+      "importance": 0.02981487382914293
+    },
+    {
+      "name": "database_score",
+      "display_name": "Database",
+      "importance": 0.030045794235911815
+    },
+    {
+      "name": "networking_score",
+      "display_name": "Networking",
+      "importance": 0.02966423978946021
+    },
+    {
+      "name": "mobile_score",
+      "display_name": "Mobile Development",
+      "importance": 0.030104824278745546
+    },
+    {
+      "name": "game_dev_score",
+      "display_name": "Game Development",
+      "importance": 0.029896257271061825
+    },
+    {
+      "name": "testing_score",
+      "display_name": "Testing/QA",
+      "importance": 0.03038104188401223
+    },
+    {
+      "name": "business_analysis_score",
+      "display_name": "Business Analysis",
+      "importance": 0.030736262407409162
+    },
+    {
+      "name": "product_management_score",
+      "display_name": "Product Management",
+      "importance": 0.029977896850197715
+    },
+    {
+      "name": "ui_design_score",
+      "display_name": "UI Design",
+      "importance": 0.029825513229509992
+    },
+    {
+      "name": "ux_research_score",
+      "display_name": "UX Research",
+      "importance": 0.03025868569412891
+    },
+    {
+      "name": "communication_score",
+      "display_name": "Communication",
+      "importance": 0.029306197340287964
+    },
+    {
+      "name": "leadership_score",
+      "display_name": "Leadership",
+      "importance": 0.02911156045973226
+    },
+    {
+      "name": "problem_solving_score",
+      "display_name": "Problem Solving",
+      "importance": 0.03034015669726979
+    },
+    {
+      "name": "teamwork_score",
+      "display_name": "Teamwork",
+      "importance": 0.030337738933437833
+    },
+    {
+      "name": "agile_score",
+      "display_name": "Agile/Scrum",
+      "importance": 0.029684568454214105
+    },
+    {
+      "name": "research_score",
+      "display_name": "Research",
+      "importance": 0.029763819029434636
+    },
+    {
+      "name": "education_level",
+      "display_name": "Education Level",
+      "importance": 0.023375310059517495
+    },
+    {
+      "name": "country",
+      "display_name": "Country",
+      "importance": 0.03341680969304178
+    },
+    {
+      "name": "industry",
+      "display_name": "Industry",
+      "importance": 0.034312768450326894
+    },
+    {
+      "name": "employment_type",
+      "display_name": "Employment Type",
+      "importance": 0.024941527838124866
+    },
+    {
+      "name": "remote_preference",
+      "display_name": "Remote Preference",
+      "importance": 0.021261636135546404
+    }
+  ],
+  "top_10": [
+    {
+      "name": "projects_completed",
+      "display_name": "Projects Completed",
+      "importance": 0.045056080421166635
+    },
+    {
+      "name": "years_experience",
+      "display_name": "Years of Experience",
+      "importance": 0.03921355111456964
+    },
+    {
+      "name": "industry",
+      "display_name": "Industry",
+      "importance": 0.034312768450326894
+    },
+    {
+      "name": "country",
+      "display_name": "Country",
+      "importance": 0.03341680969304178
+    },
+    {
+      "name": "business_analysis_score",
+      "display_name": "Business Analysis",
+      "importance": 0.030736262407409162
+    },
+    {
+      "name": "testing_score",
+      "display_name": "Testing/QA",
+      "importance": 0.03038104188401223
+    },
+    {
+      "name": "cloud_score",
+      "display_name": "Cloud Computing",
+      "importance": 0.0303538746969404
+    },
+    {
+      "name": "problem_solving_score",
+      "display_name": "Problem Solving",
+      "importance": 0.03034015669726979
+    },
+    {
+      "name": "teamwork_score",
+      "display_name": "Teamwork",
+      "importance": 0.030337738933437833
+    },
+    {
+      "name": "ux_research_score",
+      "display_name": "UX Research",
+      "importance": 0.03025868569412891
+    }
+  ]
+}
