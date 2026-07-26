@@ -275,28 +275,8 @@ class ValidationDatasetGenerator:
                 feature_info = {"min": 1, "max": 10, "average": 5}
 
             mean_value = float(feature_info.get("average", 5))
-            # Strong adaptive anchor boost
             if feature in anchors:
-
-                if seniority == "Junior":
-                    mean_value += 1.2
-
-                elif seniority == "Mid":
-                    mean_value += 1.8
-
-                elif seniority == "Senior":
-                    mean_value += 2.3
-
-                elif seniority == "Lead":
-                    mean_value += 2.7
-
-                elif seniority == "Expert":
-                    mean_value += 3.0
-            # Keep anchor features inside their valid range
-            mean_value = max(
-                feature_info["min"],
-                min(mean_value, feature_info["max"])
-            )
+                mean_value += 1.0
             if feature in {"communication_score", "leadership_score", "problem_solving_score", "teamwork_score", "research_score"}:
                 mean_value += 0.2
             if feature == "communication_score":
