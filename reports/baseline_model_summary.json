@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-07-26T19:47:39.530499",
+  "random_seed": 42,
+  "cv_folds": 5,
+  "models": {
+    "Random Forest": {
+      "accuracy": 0.9968,
+      "precision": 0.9968,
+      "recall": 0.9968,
+      "f1": 0.9968,
+      "cv_accuracy": 0.9951,
+      "train_time": 0.6607,
+      "pred_time": 0.079519
+    },
+    "Extra Trees": {
+      "accuracy": 0.996,
+      "precision": 0.996,
+      "recall": 0.996,
+      "f1": 0.996,
+      "cv_accuracy": 0.9959,
+      "train_time": 0.5077,
+      "pred_time": 0.083062
+    },
+    "XGBoost": {
+      "accuracy": 0.9962,
+      "precision": 0.9963,
+      "recall": 0.9963,
+      "f1": 0.9963,
+      "cv_accuracy": 0.995,
+      "train_time": 3.4942,
+      "pred_time": 0.037001
+    },
+    "LightGBM": {
+      "accuracy": 0.9958,
+      "precision": 0.9958,
+      "recall": 0.9957,
+      "f1": 0.9958,
+      "cv_accuracy": 0.9954,
+      "train_time": 3.4552,
+      "pred_time": 0.221649
+    },
+    "CatBoost": {
+      "accuracy": 0.993,
+      "precision": 0.993,
+      "recall": 0.993,
+      "f1": 0.993,
+      "cv_accuracy": 0.9928,
+      "train_time": 9.3024,
+      "pred_time": 0.012906
+    }
+  },
+  "rankings": {
+    "by_f1": [
+      "Random Forest",
+      "XGBoost",
+      "Extra Trees",
+      "LightGBM",
+      "CatBoost"
+    ],
+    "by_cv_accuracy": [
+      "Extra Trees",
+      "LightGBM",
+      "Random Forest",
+      "XGBoost",
+      "CatBoost"
+    ],
+    "by_train_time": [
+      "Extra Trees",
+      "Random Forest",
+      "LightGBM",
+      "XGBoost",
+      "CatBoost"
+    ],
+    "by_pred_time": [
+      "CatBoost",
+      "XGBoost",
+      "Random Forest",
+      "Extra Trees",
+      "LightGBM"
+    ]
+  },
+  "best_model": "Random Forest"
+}

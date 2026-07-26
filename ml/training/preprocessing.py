@@ -28,8 +28,12 @@ DATA_DIR = PROJECT_ROOT / "datasets" / "synthetic"
 MODELS_DIR = PROJECT_ROOT / "models"
 MODELS_DIR.mkdir(parents=True, exist_ok=True)
 
+import os
+
 # Dataset paths
-INPUT_PATH = DATA_DIR / "synthetic_dataset_20000.csv"
+# Override with e.g. `INPUT_DATASET_PATH=/path/to/file.csv python preprocessing.py`
+# instead of hand-editing this file each time the source dataset moves/renames.
+INPUT_PATH = Path(os.environ.get("INPUT_DATASET_PATH", DATA_DIR / "synthetic_dataset_20000.csv"))
 TRAIN_PATH = DATA_DIR / "train.csv"
 TEST_PATH = DATA_DIR / "test.csv"
 
@@ -240,16 +244,25 @@ def create_target_encoder() -> LabelEncoder:
 
 def encode_target(y: pd.Series, encoder: LabelEncoder) -> np.ndarray:
     """
-    Encode target variable using LabelEncoder.
+    Encode target variable using an already-fitted LabelEncoder.
+
+    This is the inference-time counterpart to fitting the encoder during
+    training (see Step 8 of run_preprocessing_pipeline). It intentionally
+    uses `.transform()`, not `.fit_transform()` -- refitting here would
+    silently remap class indices to whatever labels happen to be present
+    in `y`, corrupting the mapping any already-trained model depends on.
 
     Args:
         y: Target Series.
-        encoder: Fitted LabelEncoder.
+        encoder: Already-fitted LabelEncoder (e.g. loaded via load_target_encoder).
 
     Returns:
         Encoded target array.
+
+    Raises:
+        ValueError: if `y` contains labels the encoder was never fitted on.
     """
-    return encoder.fit_transform(y)
+    return encoder.transform(y)
 
 
 # =============================================================================
@@ -257,13 +270,13 @@ def encode_target(y: pd.Series, encoder: LabelEncoder) -> np.ndarray:
 # =============================================================================
 
 
-def validate_no_missing_values(df: pd.DataFrame) -> bool:
-    """Check for missing values in the dataset."""
-    missing = df.isnull().sum().sum()
+def validate_no_missing_values(df: pd.DataFrame, label: str = "features") -> bool:
+    """Check for missing values in the dataset (or Series, e.g. the target)."""
+    missing = df.isnull().sum().sum() if hasattr(df, "columns") else df.isnull().sum()
     if missing > 0:
-        print(f"  WARNING: Found {missing} missing values")
+        print(f"  WARNING: Found {missing} missing values in {label}")
         return False
-    print("  [PASS] No missing values")
+    print(f"  [PASS] No missing values in {label}")
     return True
 
 
@@ -288,10 +301,22 @@ def validate_no_unseen_categories(
 
 def validate_class_balance(y_train: pd.Series, y_test: pd.Series, test_size: float) -> bool:
     """Validate that class balance is maintained in train/test split."""
-    train_dist = y_train.value_counts(normalize=True).sort_index()
-    test_dist = y_test.value_counts(normalize=True).sort_index()
+    train_dist = y_train.value_counts(normalize=True)
+    test_dist = y_test.value_counts(normalize=True)
 
-    # Check that distribution is similar (within 5% tolerance)
+    # Align on the union of classes seen in either split so a class that's
+    # completely missing from train or test shows up as a real difference
+    # (NaN -> 0.0) instead of being silently dropped by the subtraction.
+    all_classes = train_dist.index.union(test_dist.index)
+    train_dist = train_dist.reindex(all_classes, fill_value=0.0)
+    test_dist = test_dist.reindex(all_classes, fill_value=0.0)
+
+    missing_from_train = set(test_dist.index) - set(y_train.unique())
+    missing_from_test = set(train_dist.index) - set(y_test.unique())
+    if missing_from_train or missing_from_test:
+        print(f"  WARNING: Classes missing from a split - train missing: {missing_from_train}, test missing: {missing_from_test}")
+        return False
+
     max_diff = (train_dist - test_dist).abs().max()
     if max_diff > 0.05:
         print(f"  WARNING: Class distribution difference: {max_diff:.4f}")
@@ -341,7 +366,8 @@ def run_preprocessing_pipeline() -> dict:
     # Step 4: Validate Data Quality
     # -------------------------------------------------------------------------
     print("\n[4/10] Validating data quality...")
-    validate_no_missing_values(X)
+    validate_no_missing_values(X, label="features")
+    validate_no_missing_values(y, label="target")
 
     # -------------------------------------------------------------------------
     # Step 5: Train/Test Split
@@ -377,7 +403,11 @@ def run_preprocessing_pipeline() -> dict:
     # -------------------------------------------------------------------------
     print("\n[8/10] Fitting target encoder...")
     target_encoder = create_target_encoder()
-    y_train_encoded = target_encoder.fit_transform(y_train)
+    target_encoder.fit(y_train)
+    # Sanity check: transform is exercised here (and would raise if y_test
+    # contained a label unseen in y_train) even though the CSVs store the
+    # original string labels for readability/compatibility with model_training.py.
+    y_train_encoded = target_encoder.transform(y_train)
     y_test_encoded = target_encoder.transform(y_test)
     print(f"  [PASS] Target encoder fitted with {len(target_encoder.classes_)} classes")
 

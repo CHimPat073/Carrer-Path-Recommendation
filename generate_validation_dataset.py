@@ -98,15 +98,41 @@ class ValidationDatasetGenerator:
     def _bounded_int(value: float, low: int, high: int) -> int:
         return int(round(ValidationDatasetGenerator._clamp(value, low, high)))
 
-    def _sample_from_range(self, range_info: dict, default_mean: float, sigma: float = None) -> float:
+    def _sample_from_range(
+    self,
+    range_info: dict[str, any],
+    default_mean: float,
+    sigma: float | None = None,) -> float:
+        """
+        Sample a value using a truncated Gaussian distribution.
+
+        Improvements:
+        - Lower variance
+        - Stay closer to career average
+        - Prevent excessive overlap between careers
+        """
+
         if not isinstance(range_info, dict):
             return float(default_mean)
+
         minimum = float(range_info.get("min", 1))
         maximum = float(range_info.get("max", 10))
-        average = float(default_mean)
-        spread = sigma if sigma is not None else max(0.6, (maximum - minimum) / 6)
-        value = self.random.gauss(average, spread)
-        return self._clamp(value, minimum, maximum)
+
+        mean = float(default_mean)
+
+        feature_range = maximum - minimum
+
+        # Much tighter sigma
+        if sigma is None:
+            sigma = max(0.30, feature_range / 8)
+
+        # Generate value
+        value = self.random.gauss(mean, sigma)
+
+        # Clamp inside valid range
+        value = max(minimum, min(value, maximum))
+
+        return value
 
     def _persona_level(self) -> str:
         return self.random.choices(PERSONA_LEVELS, weights=PERSONA_WEIGHTS, k=1)[0]
@@ -249,8 +275,28 @@ class ValidationDatasetGenerator:
                 feature_info = {"min": 1, "max": 10, "average": 5}
 
             mean_value = float(feature_info.get("average", 5))
+            # Strong adaptive anchor boost
             if feature in anchors:
-                mean_value += 1.0
+
+                if seniority == "Junior":
+                    mean_value += 1.2
+
+                elif seniority == "Mid":
+                    mean_value += 1.8
+
+                elif seniority == "Senior":
+                    mean_value += 2.3
+
+                elif seniority == "Lead":
+                    mean_value += 2.7
+
+                elif seniority == "Expert":
+                    mean_value += 3.0
+            # Keep anchor features inside their valid range
+            mean_value = max(
+                feature_info["min"],
+                min(mean_value, feature_info["max"])
+            )
             if feature in {"communication_score", "leadership_score", "problem_solving_score", "teamwork_score", "research_score"}:
                 mean_value += 0.2
             if feature == "communication_score":

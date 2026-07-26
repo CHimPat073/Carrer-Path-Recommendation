@@ -70,7 +70,7 @@ CANONICAL_TO_INTERNAL: Dict[str, str] = {v: k for k, v in FEATURE_NAME_CANONICAL
 REQUIRED_FEATURES: Set[str] = {
     "python", "java", "javascript", "sql", "machine_learning", "deep_learning",
     "cloud", "devops", "cybersecurity", "data_analysis", "database", "networking",
-    "mobile", "game_dev", "testing", "business_analysis",
+    "mobile_development", "game_development", "testing", "business_analysis",
     "product_management", "ui_design", "ux_research", "communication", "leadership",
     "problem_solving", "teamwork", "agile", "research",
 }
@@ -370,9 +370,10 @@ class SyntheticProfileGenerator:
             feature_info, was_found = self._resolve_feature_range(feature_name, career)
 
             mean_value = float(feature_info.get("average", 5))
-            is_anchor = feature in anchors
-            if is_anchor:
-                mean_value += 3.0
+            if feature in anchors:
+                mean_value += 1.0
+            if feature in {"communication_score", "leadership_score", "problem_solving_score", "teamwork_score", "research_score"}:
+                mean_value += 0.2
             if feature == "communication_score":
                 mean_value += max(0, (persona.get("communication", 6) - 6) * 0.25)
             if feature == "leadership_score":
@@ -380,17 +381,9 @@ class SyntheticProfileGenerator:
             if feature == "problem_solving_score":
                 mean_value += max(0, (persona.get("problem_solving", 6) - 6) * 0.25)
 
-            feature_min = float(feature_info.get("min", 1))
-            feature_max = float(feature_info.get("max", 10))
-            mean_value = self._clamp(mean_value, feature_min, feature_max)
-
-            # Anchor features get a tighter sigma so the career-specific signal
-            # isn't washed out by sampling noise; non-anchor features keep the
-            # wider spread.
-            base_sigma = max(0.5, (feature_max - feature_min) / 4)
-            sigma = base_sigma * 0.6 if is_anchor else base_sigma
+            sigma = max(0.5, (float(feature_info.get("max", 10)) - float(feature_info.get("min", 1))) / 4)
             sampled = self._sample_from_range(feature_info, default_mean=mean_value, sigma=sigma)
-            row[feature] = self._bounded_int(sampled, int(feature_min), int(feature_max))
+            row[feature] = self._bounded_int(sampled, int(feature_info.get("min", 1)), int(feature_info.get("max", 10)))
 
         if logger.isEnabledFor(logging.DEBUG):
             logger.debug(f"Generated base row for {career}")
@@ -399,12 +392,6 @@ class SyntheticProfileGenerator:
         return row
 
     def _apply_correlation_rules(self, row: dict[str, Any]) -> None:
-        # NOTE: non-experience correlated features are hardcoded to a [1, 10]
-        # bound here. This is currently safe because every "_score" feature in
-        # FEATURE_NAMES uses a 1-10 scale, but if a differently-scaled feature
-        # is ever added to correlation_rules.json this will silently clamp it
-        # incorrectly. Prefer looking up the feature's real range if that
-        # changes.
         for rule in self.correlation_rules:
             pair = rule.get("feature_pair", [])
             if len(pair) != 2:
@@ -484,28 +471,11 @@ class SyntheticProfileGenerator:
         if not similar or self.random.random() >= 0.25:
             return
         selected = self.random.choices(similar, weights=[item.get("similarity_percentage", 50) for item in similar], k=1)[0]
-        similar_career = selected.get("career")
-        if not similar_career:
+        if not selected.get("career"):
             return
-
-        similar_range = self.feature_lookup.get(similar_career, {})
-        # Only nudge features that are actually anchors for *this* career (i.e.
-        # meaningfully differentiated features), and only toward the similar
-        # career's real average for that feature -- not toward random noise.
-        # This models genuine overlap between adjacent roles (e.g. Data
-        # Scientist / ML Engineer) without erasing the anchor signal outright.
-        pull_weight = float(selected.get("similarity_percentage", 50)) / 100.0 * 0.4
-        for feature in self._career_anchor_features(career):
-            if self.random.random() >= 0.35:
-                continue
-            feature_name = feature.replace("_score", "")
-            similar_info = similar_range.get(feature_name)
-            if not isinstance(similar_info, dict):
-                continue
-            similar_avg = float(similar_info.get("average", row.get(feature, 5)))
-            current = row.get(feature, 5)
-            blended = current + (similar_avg - current) * pull_weight
-            row[feature] = self._bounded_int(blended, 1, 10)
+        for feature in ["python_score", "sql_score", "javascript_score", "cloud_score", "devops_score", "machine_learning_score", "ui_design_score", "communication_score", "leadership_score"]:
+            if self.random.random() < 0.35:
+                row[feature] = self._bounded_int((row.get(feature, 5) + self.random.randint(4, 7)) / 2, 1, 10)
 
     def _finalize_row(self, row: dict[str, Any], career: str, career_entry: dict[str, Any]) -> dict[str, Any]:
         salary_min, salary_max = self._parse_salary_band(career_entry.get("salary_band", "$80k-$120k USD"))
@@ -532,19 +502,13 @@ class SyntheticProfileGenerator:
 
     def generate(self) -> tuple[list[dict[str, Any]], dict[str, Any]]:
         balanced_careers = [career for career in TARGET_CAREERS for _ in range(self.rows // len(TARGET_CAREERS))]
-        remainder = self.rows - len(balanced_careers)
-        if remainder > 0:
-            # Spread the remainder across a random sample of careers instead of
-            # always favoring whichever careers happen to come first in
-            # TARGET_CAREERS, so class balance doesn't silently skew.
-            balanced_careers.extend(self.random.sample(TARGET_CAREERS, remainder))
+        if len(balanced_careers) < self.rows:
+            balanced_careers.extend(TARGET_CAREERS[: self.rows - len(balanced_careers)])
         self.random.shuffle(balanced_careers)
 
         generated_rows: list[dict[str, Any]] = []
-        persona_counts: Counter[str] = Counter()
         for career in balanced_careers[: self.rows]:
             persona_name = self._persona_level()
-            persona_counts[persona_name] += 1
             row = self._generate_base_row(career, persona_name, self.career_lookup.get(career, {}))
             self._apply_correlation_rules(row)
             self._apply_overlap(row, career)
@@ -555,7 +519,7 @@ class SyntheticProfileGenerator:
         report = {
             "rows_generated": len(generated_rows),
             "career_distribution": dict(Counter(row["career"] for row in generated_rows)),
-            "persona_distribution": dict(persona_counts),
+            "persona_distribution": dict(Counter(self._persona_level() for _ in generated_rows)),
             "feature_columns": FEATURE_NAMES + ["career", "salary_band", "remote_preference", "career_growth_score", "job_satisfaction", "work_hours_per_week", "country", "industry", "employment_type"],
         }
         return generated_rows, report
