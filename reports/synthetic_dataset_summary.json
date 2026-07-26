@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-07-26T16:07:08.807666",
+  "dataset_version": "v2.0.0",
+  "random_seed": 42,
+  "shape": {
+    "rows": 20000,
+    "columns": 38
+  },
+  "career_distribution": {
+    "Data Engineer": 1000,
+    "QA Engineer": 1000,
+    "Ethical Hacker": 1000,
+    "Network Engineer": 1000,
+    "Cloud Engineer": 1000,
+    "Cyber Security Analyst": 1000,
+    "DevOps Engineer": 1000,
+    "Frontend Developer": 1000,
+    "Software Engineer": 1000,
+    "Game Developer": 1000,
+    "AI Research Engineer": 1000,
+    "Full Stack Developer": 1000,
+    "Product Manager": 1000,
+    "Mobile App Developer": 1000,
+    "Data Scientist": 1000,
+    "Database Administrator": 1000,
+    "ML Engineer": 1000,
+    "Backend Developer": 1000,
+    "Business Analyst": 1000,
+    "UI/UX Designer": 1000
+  },
+  "missing_values": 0,
+  "duplicates": 0,
+  "range_violations": 0,
+  "outlier_count": 230,
+  "outlier_percentage": 0.0359,
+  "correlation_summary": {
+    "high_correlation_pairs": 1
+  },
+  "generation_parameters": {
+    "samples_per_career": 1000,
+    "total_careers": 20,
+    "shuffle": true
+  },
+  "validation_status": "PASS"
+}
