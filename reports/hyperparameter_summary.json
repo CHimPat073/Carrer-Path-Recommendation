@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-07-31T02:27:14.518224",
+  "models": [
+    {
+      "model_key": "random_forest",
+      "model_name": "Random Forest",
+      "best_params": {
+        "n_estimators": 300,
+        "min_samples_split": 2,
+        "min_samples_leaf": 2,
+        "max_features": "log2",
+        "max_depth": 30,
+        "bootstrap": false
+      },
+      "best_cv_score": 0.9959370702766825,
+      "training_time": 72.72953605651855,
+      "prediction_time": 0.09978795051574707,
+      "accuracy": 0.99775,
+      "precision": 0.9977685093007684,
+      "recall": 0.9977500000000001,
+      "f1": 0.9977512032483087
+    },
+    {
+      "model_key": "xgboost",
+      "model_name": "XGBoost",
+      "best_params": {
+        "subsample": 0.7,
+        "n_estimators": 300,
+        "min_child_weight": 1,
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "gamma": 0.1,
+        "colsample_bytree": 0.7
+      },
+      "best_cv_score": 0.9958748724279813,
+      "training_time": 95.87885022163391,
+      "prediction_time": 0.06351184844970703,
+      "accuracy": 0.99675,
+      "precision": 0.9967598881184901,
+      "recall": 0.9967499999999999,
+      "f1": 0.9967505968784961
+    },
+    {
+      "model_key": "lightgbm",
+      "model_name": "LightGBM",
+      "best_params": {
+        "subsample": 0.7,
+        "num_leaves": 63,
+        "n_estimators": 200,
+        "min_child_samples": 10,
+        "max_depth": 5,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.8
+      },
+      "best_cv_score": 0.99587571659285,
+      "training_time": 295.19466280937195,
+      "prediction_time": 0.15777826309204102,
+      "accuracy": 0.99575,
+      "precision": 0.9957599008044508,
+      "recall": 0.9957499999999999,
+      "f1": 0.9957524797496402
+    }
+  ],
+  "ranking": [
+    {
+      "rank": 1,
+      "model": "Random Forest",
+      "f1": 0.9977512032483087,
+      "best_cv_score": 0.9959370702766825
+    },
+    {
+      "rank": 2,
+      "model": "XGBoost",
+      "f1": 0.9967505968784961,
+      "best_cv_score": 0.9958748724279813
+    },
+    {
+      "rank": 3,
+      "model": "LightGBM",
+      "f1": 0.9957524797496402,
+      "best_cv_score": 0.99587571659285
+    }
+  ],
+  "recommended_model": "Random Forest"
+}
