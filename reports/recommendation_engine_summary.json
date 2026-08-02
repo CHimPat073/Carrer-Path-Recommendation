@@ -1,0 +1,62 @@
+{
+  "module": "ml.inference.recommendation_engine",
+  "architecture": "Pure orchestration layer that merges prediction, confidence, SHAP, and knowledge-base outputs.",
+  "responsibilities": [
+    "Validate already computed payloads",
+    "Merge model outputs into one recommendation object",
+    "Extract strengths and improvement areas from SHAP values",
+    "Source all career information from the knowledge base"
+  ],
+  "input_contract": {
+    "prediction_result": {
+      "prediction": "str",
+      "top3": [
+        {
+          "career": "str",
+          "probability": "float"
+        }
+      ]
+    },
+    "confidence_result": {
+      "confidence_score": "float",
+      "confidence_level": "str",
+      "prediction_reliability": "str"
+    },
+    "shap_result": {
+      "top_positive_features": "list",
+      "top_negative_features": "list"
+    },
+    "user_input": "optional dict"
+  },
+  "output_contract": {
+    "recommended_career": "str",
+    "confidence": "float",
+    "confidence_level": "str",
+    "prediction_reliability": "str",
+    "top3_careers": "list",
+    "career_information": {
+      "description": "str",
+      "career_family": "str",
+      "industry": "list[str]",
+      "salary_range": "str"
+    },
+    "strengths": "list",
+    "improvement_areas": "list",
+    "required_skills": "list[str]",
+    "education_path": "list[str]",
+    "next_roles": "list[str]"
+  },
+  "knowledge_base_integration": [
+    "knowledge_base/careers.json",
+    "knowledge_base/career_personas.json",
+    "knowledge_base/roadmaps.json",
+    "knowledge_base/domain_metadata.json"
+  ],
+  "future_extensions": [
+    "API adapters for Streamlit, Flask, and FastAPI",
+    "response schema versioning",
+    "knowledge-base caching",
+    "localization",
+    "audit metadata"
+  ]
+}
