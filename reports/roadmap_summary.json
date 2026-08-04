@@ -1,0 +1,77 @@
+{
+  "module": "ml.inference.roadmap_engine",
+  "status": "production-ready",
+  "knowledge_base_files_used": [
+    "knowledge_base/learning_resources.json"
+  ],
+  "input_dependencies": {
+    "skill_gap_result": "ml.inference.skill_gap_engine.SkillGapEngine.analyze()",
+    "recommendation_result": "ml.inference.recommendation_engine.RecommendationEngine.recommend()"
+  },
+  "architectural_principle": "Pure deterministic ordering layer - no ML, no UI, no prediction.",
+  "sample_run": {
+    "recommended_career": "ML Engineer",
+    "estimated_completion_weeks": 23,
+    "phases": [
+      {
+        "phase": 1,
+        "skill": "Docker",
+        "difficulty": "Beginner",
+        "duration_weeks": 2,
+        "prerequisites": [],
+        "resource_types": ["Course", "Documentation", "Hands-on Lab"]
+      },
+      {
+        "phase": 2,
+        "skill": "Kubernetes",
+        "difficulty": "Intermediate",
+        "duration_weeks": 4,
+        "prerequisites": ["Docker"],
+        "resource_types": ["Course", "Documentation", "Hands-on Lab"]
+      },
+      {
+        "phase": 3,
+        "skill": "Git",
+        "difficulty": "Beginner",
+        "duration_weeks": 1,
+        "prerequisites": [],
+        "resource_types": ["Course", "Documentation"]
+      },
+      {
+        "phase": 4,
+        "skill": "Machine Learning",
+        "difficulty": "Intermediate",
+        "duration_weeks": 8,
+        "prerequisites": [],
+        "resource_types": ["Course", "Book", "Hands-on Project"]
+      },
+      {
+        "phase": 5,
+        "skill": "Deep Learning",
+        "difficulty": "Advanced",
+        "duration_weeks": 8,
+        "prerequisites": ["Machine Learning"],
+        "resource_types": ["Course", "Book", "Research Papers"]
+      }
+    ],
+    "unresolved_skills": []
+  },
+  "public_api": {
+    "RoadmapEngine.build(skill_gap_result, recommendation_result)": "Returns the canonical roadmap dict.",
+    "LearningResourceKB.get(skill)": "Returns a single KB spec (with default_spec fallback)."
+  },
+  "ordering_rules": [
+    "Prerequisites first (Kahn topological sort).",
+    "Higher gap first (worst skill first).",
+    "Higher priority first (High > Medium > Low > None).",
+    "Easier difficulty first (Beginner < Intermediate < Advanced).",
+    "Alphabetical order (deterministic tie-breaker)."
+  ],
+  "future_extensions": [
+    "Per-user weekly hour budget to refine week estimates.",
+    "Skill weight overrides from the curriculum team.",
+    "Multi-track roadmaps (foundational vs. specialised).",
+    "Localization of skill display names.",
+    "Audit metadata for compliance reporting."
+  ]
+}
