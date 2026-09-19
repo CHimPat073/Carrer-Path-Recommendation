@@ -6,3 +6,5 @@ dataset/
 *.h5
 *.pt
 *.pth
+
+DEPLOYMENT
