@@ -7,4 +7,36 @@ dataset/
 *.pt
 *.pth
 
-DEPLOYMENT
+# Local environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Python caches and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local logs and generated training output
+*.log
+catboost_info/
+ml/logs/
+plots/*.png
+
+# Local frontend dependencies and builds
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Deployment-generated files
+.docker/
+deployment/.generated/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example

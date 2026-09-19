@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CareerPilot AI</title>
+  <style>
+    :root { --ink: #17221f; --muted: #6b7771; --paper: #f5f2ea; --card: #fffdf8; --green: #176b52; --lime: #d9e87e; --line: #d9ded5; --orange: #d86b3d; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: radial-gradient(circle at 90% 0%, #e8edbf 0, transparent 28%), var(--paper); font: 15px Georgia, serif; }
+    header, main { max-width: 1180px; margin: auto; padding: 22px 24px; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 10px; font: 700 22px Arial, sans-serif; letter-spacing: .02em; }
+    .brand-mark { display: grid; width: 34px; height: 34px; place-items: center; color: var(--ink); background: var(--lime); border-radius: 50%; font-size: 12px; }
+    .header-actions { display: flex; align-items: center; gap: 18px; }
+    .login { width: auto; margin: 0; padding: 10px 16px; color: var(--ink); background: transparent; border: 1px solid var(--ink); border-radius: 999px; }
+    .login:hover { color: var(--card); background: var(--ink); }
+    .status { color: var(--green); font: 700 12px Arial, sans-serif; }
+    h1 { max-width: 720px; margin: 35px 0 12px; font-size: clamp(42px, 7vw, 82px); line-height: .93; font-weight: 400; }
+    .intro { max-width: 610px; color: var(--muted); font-size: 19px; line-height: 1.45; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 9px; margin: 24px 0 40px; }
+    .pill { padding: 8px 12px; color: var(--green); background: #e8efd4; border-radius: 999px; font: 700 11px Arial, sans-serif; }
+    .layout { display: grid; grid-template-columns: 1fr 1.15fr; gap: 22px; align-items: start; }
+    .panel { background: color-mix(in srgb, var(--card) 94%, transparent); border: 1px solid var(--line); border-radius: 12px; padding: 26px; box-shadow: 0 16px 40px #3046300d; }
+    .panel h2 { margin: 0 0 20px; font: 700 18px Arial, sans-serif; }
+    .section-note { margin: -10px 0 20px; color: var(--muted); font: 13px Arial, sans-serif; line-height: 1.4; }
+    .fields { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    label { display: grid; gap: 6px; color: var(--muted); font: 12px Arial, sans-serif; }
+    input, select { width: 100%; padding: 11px 10px; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 4px; font: 15px Arial, sans-serif; }
+    input:focus, select:focus { outline: 2px solid var(--lime); border-color: var(--green); }
+    .wide { grid-column: 1 / -1; }
+    button { width: 100%; margin-top: 20px; padding: 14px 18px; border: 0; border-radius: 4px; color: var(--ink); background: var(--lime); cursor: pointer; font: 700 14px Arial, sans-serif; }
+    button:hover { background: #c8dc5d; }
+    button:disabled { cursor: wait; opacity: .6; }
+    #result { display: none; }
+    .result-head { display: flex; justify-content: space-between; gap: 16px; align-items: start; border-bottom: 1px solid var(--line); padding-bottom: 20px; }
+    .result-head h2 { margin-bottom: 8px; font-size: 28px; }
+    .confidence { color: var(--green); font: 700 30px Arial, sans-serif; text-align: right; }
+    .eyebrow { color: var(--orange); font: 700 11px Arial, sans-serif; text-transform: uppercase; letter-spacing: .1em; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 20px 0; }
+    .stat { padding: 14px; background: #f0f3e7; border-radius: 4px; }
+    .stat strong { display: block; margin-top: 7px; font: 700 14px Arial, sans-serif; }
+    .stat span { color: var(--muted); font: 11px Arial, sans-serif; }
+    .list { margin: 0; padding: 0; list-style: none; }
+    .list li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .list small { color: var(--muted); }
+    .roadmap { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--line); }
+    .roadmap article { padding: 12px 0; border-bottom: 1px solid var(--line); }
+    .roadmap b { font: 700 14px Arial, sans-serif; }
+    .roadmap p { margin: 6px 0 0; color: var(--muted); line-height: 1.4; }
+    .error { display: none; margin-top: 14px; padding: 12px; color: #8d301e; background: #fff0e9; border: 1px solid #efc4b6; border-radius: 4px; font: 13px Arial, sans-serif; }
+    @media (max-width: 800px) { .layout { grid-template-columns: 1fr; } h1 { margin-top: 18px; } .fields { grid-template-columns: 1fr; } .cards { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header><div class="brand"><span class="brand-mark">CP</span><span>CareerPilot AI</span></div><div class="header-actions"><div class="status">● MODEL CONNECTED</div><button id="login" class="login" type="button">Log in</button></div></header>
+  <main>
+    <div class="eyebrow">Career direction, made practical</div>
+    <h1>Find the work that fits your signal.</h1>
+    <p class="intro">Tell us about your experience and skills. CareerPilot compares your profile with its trained career model and turns the result into a clear next step.</p>
+    <div class="hero-meta"><span class="pill">Top career matches</span><span class="pill">Skill-gap clarity</span><span class="pill">Personal learning plan</span></div>
+
+    <div class="layout">
+      <form id="profile-form" class="panel">
+        <h2>Your profile</h2>
+        <p class="section-note">Use your best estimate. You can adjust the scores and try again.</p>
+        <div id="fields" class="fields"></div>
+        <button id="submit" type="submit">Generate my career map</button>
+        <div id="error" class="error"></div>
+      </form>
+
+      <section id="result" class="panel">
+        <div class="result-head"><div><div class="eyebrow">Best match</div><h2 id="career"></h2><p id="description"></p></div><div class="confidence"><span id="confidence"></span><small>% match</small></div></div>
+        <div class="cards"><div class="stat"><span>Confidence level</span><strong id="level"></strong></div><div class="stat"><span>Reliability</span><strong id="reliability"></strong></div><div class="stat"><span>Career family</span><strong id="family"></strong></div></div>
+        <h2>Top matches</h2><ul id="top3" class="list"></ul>
+        <div class="cards"><div><h2>Strengths</h2><ul id="strengths" class="list"></ul></div><div><h2>Improve next</h2><ul id="improvements" class="list"></ul></div></div>
+        <div class="roadmap"><h2>Career progression</h2><div id="roadmap"></div></div>
+      </section>
+    </div>
+  </main>
+  <script>
+    const API = "http://127.0.0.1:8000";
+    const technicalFields = ["python_score", "java_score", "javascript_score", "sql_score", "machine_learning_score", "deep_learning_score", "cloud_score", "devops_score", "cybersecurity_score", "data_analysis_score", "database_score", "networking_score", "mobile_score", "game_dev_score", "testing_score", "business_analysis_score", "product_management_score", "ui_design_score", "ux_research_score", "communication_score", "leadership_score", "problem_solving_score", "teamwork_score", "agile_score", "research_score"];
+    const choices = { education_level: ["High School", "Associate", "Bachelor", "Master", "PhD"], remote_preference: ["Hybrid", "On-site", "Remote"], country: ["Australia", "Canada", "Germany", "India", "UK", "USA"], industry: ["Consulting", "Education", "Finance", "Gaming", "Healthcare", "Retail", "Technology"], employment_type: ["Contract", "Freelance", "Full-time", "Part-time"] };
+    const label = name => name.replace("_score", "").replaceAll("_", " ").replace(/\b\w/g, c => c.toUpperCase());
+    const fields = document.querySelector("#fields");
+    const addNumber = (name, min, max, value, wide = false) => { fields.insertAdjacentHTML("beforeend", `<label class="${wide ? "wide" : ""}">${label(name)}<input name="${name}" type="number" min="${min}" max="${max}" value="${value}" step="1" required></label>`); };
+    addNumber("years_experience", 0, 60, 3); addNumber("projects_completed", 0, 500, 6); addNumber("certifications", 0, 50, 2); addNumber("salary_band", 0, 1000000, 90000); addNumber("career_growth_score", 0, 10, 7); addNumber("job_satisfaction", 0, 10, 7); addNumber("work_hours_per_week", 0, 80, 40);
+    Object.entries(choices).forEach(([name, values]) => fields.insertAdjacentHTML("beforeend", `<label>${label(name)}<select name="${name}">${values.map(value => `<option>${value}</option>`).join("")}</select></label>`));
+    technicalFields.forEach(name => addNumber(name, 0, 10, 5));
+    const form = document.querySelector("#profile-form"); const button = document.querySelector("#submit"); const error = document.querySelector("#error");
+    document.querySelector("#login").addEventListener("click", () => { error.textContent = "Login and saved profiles are coming soon."; error.style.display = "block"; });
+    const list = (element, items, formatter) => { element.innerHTML = items.map(formatter).join(""); };
+    form.addEventListener("submit", async event => { event.preventDefault(); button.disabled = true; button.textContent = "Reading your profile..."; error.style.display = "none";
+      const profile = Object.fromEntries(new FormData(form).entries()); Object.keys(profile).forEach(key => { if (!choices[key]) profile[key] = Number(profile[key]); });
+      try { const response = await fetch(`${API}/api/v1/recommendations`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(profile) }); const data = await response.json(); if (!response.ok) throw new Error(Array.isArray(data.detail) ? data.detail.map(item => item.msg).join(", ") : data.detail || "The backend rejected this profile.");
+        document.querySelector("#result").style.display = "block"; document.querySelector("#career").textContent = data.recommended_career; document.querySelector("#description").textContent = data.career_information.description; document.querySelector("#confidence").textContent = data.confidence; document.querySelector("#level").textContent = data.confidence_level; document.querySelector("#reliability").textContent = data.prediction_reliability; document.querySelector("#family").textContent = data.career_information.career_family;
+        list(document.querySelector("#top3"), data.top3_careers, item => `<li><span>${item.career}</span><strong>${(item.probability * 100).toFixed(1)}%</strong></li>`); list(document.querySelector("#strengths"), data.strengths, item => `<li><span>${item.feature}</span><small>${item.reason}</small></li>`); list(document.querySelector("#improvements"), data.improvement_areas, item => `<li><span>${item.feature}</span><small>${item.reason}</small></li>`);
+        const gap = data.skill_gap; document.querySelector("#roadmap").innerHTML = `<p><b>Readiness:</b> ${gap.readiness_level} (${gap.overall_readiness}%)</p>` + gap.skills.map(item => `<article><b>${item.skill} / ${item.status}</b><p>Current: ${item.current} | Required: ${item.required} | Gap: ${item.gap}</p></article>`).join("") + `<h3>Learning plan</h3>` + data.learning_roadmap.roadmap.map(item => `<article><b>Phase ${item.phase}: ${item.skill}</b><p>${item.difficulty} / ${item.duration_weeks} weeks<br>Resources: ${item.resource_types.join(", ")}</p></article>`).join(""); document.querySelector("#result").scrollIntoView({ behavior: "smooth", block: "start" });
+      } catch (requestError) { error.textContent = requestError.name === "TypeError" ? requestError.message + " Start FastAPI on port 8000 and try again." : requestError.message; error.style.display = "block"; } finally { button.disabled = false; button.textContent = "Generate my career map"; }
+    });
+  </script>
+</body>
+</html>

@@ -4,6 +4,8 @@ pandas
 numpy
 scikit-learn
 joblib
+shap
+matplotlib
 pymongo
 pydantic
 python-dotenv
