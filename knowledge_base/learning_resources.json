@@ -1,0 +1,509 @@
+{
+  "metadata": {
+    "description": "Learning resources knowledge base for the Learning Roadmap Engine. Provides difficulty, estimated learning time, prerequisites, and recommended resource types for every skill known to CareerPilot AI.",
+    "version": "1.0",
+    "last_updated": "2026-08-04",
+    "usage": "Consumed exclusively by ml/inference/roadmap_engine.py to assemble personalized learning plans."
+  },
+  "skill_learning_specs": {
+    "Python": {
+      "difficulty": "Beginner",
+      "duration_weeks": 4,
+      "prerequisites": [],
+      "resource_types": ["Course", "Book", "Hands-on Project"]
+    },
+    "SQL": {
+      "difficulty": "Beginner",
+      "duration_weeks": 3,
+      "prerequisites": [],
+      "resource_types": ["Course", "Practice Platform", "Documentation"]
+    },
+    "Git": {
+      "difficulty": "Beginner",
+      "duration_weeks": 1,
+      "prerequisites": [],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "Linux": {
+      "difficulty": "Beginner",
+      "duration_weeks": 3,
+      "prerequisites": [],
+      "resource_types": ["Course", "Hands-on Lab", "Documentation"]
+    },
+    "Statistics": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 5,
+      "prerequisites": [],
+      "resource_types": ["Course", "Book", "Practice Problems"]
+    },
+    "Data Analysis": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["Python", "SQL", "Statistics"],
+      "resource_types": ["Course", "Hands-on Project"]
+    },
+    "Machine Learning": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 8,
+      "prerequisites": ["Python", "Statistics"],
+      "resource_types": ["Course", "Book", "Hands-on Project"]
+    },
+    "Deep Learning": {
+      "difficulty": "Advanced",
+      "duration_weeks": 8,
+      "prerequisites": ["Machine Learning", "Python"],
+      "resource_types": ["Course", "Book", "Research Papers"]
+    },
+    "NLP": {
+      "difficulty": "Advanced",
+      "duration_weeks": 6,
+      "prerequisites": ["Machine Learning", "Deep Learning"],
+      "resource_types": ["Course", "Research Papers", "Hands-on Project"]
+    },
+    "Computer Vision": {
+      "difficulty": "Advanced",
+      "duration_weeks": 6,
+      "prerequisites": ["Machine Learning", "Deep Learning"],
+      "resource_types": ["Course", "Research Papers", "Hands-on Project"]
+    },
+    "Reinforcement Learning": {
+      "difficulty": "Advanced",
+      "duration_weeks": 7,
+      "prerequisites": ["Machine Learning", "Deep Learning"],
+      "resource_types": ["Course", "Research Papers"]
+    },
+    "Cloud": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 5,
+      "prerequisites": ["Linux"],
+      "resource_types": ["Course", "Hands-on Lab", "Documentation"]
+    },
+    "AWS": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["Cloud"],
+      "resource_types": ["Course", "Hands-on Lab", "Documentation"]
+    },
+    "Azure": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["Cloud"],
+      "resource_types": ["Course", "Hands-on Lab", "Documentation"]
+    },
+    "GCP": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["Cloud"],
+      "resource_types": ["Course", "Hands-on Lab", "Documentation"]
+    },
+    "DevOps": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 6,
+      "prerequisites": ["Linux", "Git"],
+      "resource_types": ["Course", "Hands-on Lab", "Book"]
+    },
+    "Docker": {
+      "difficulty": "Beginner",
+      "duration_weeks": 2,
+      "prerequisites": ["Linux"],
+      "resource_types": ["Course", "Documentation", "Hands-on Lab"]
+    },
+    "Kubernetes": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["Docker", "Linux"],
+      "resource_types": ["Course", "Documentation", "Hands-on Lab"]
+    },
+    "Database": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 5,
+      "prerequisites": ["SQL"],
+      "resource_types": ["Course", "Book", "Hands-on Project"]
+    },
+    "NoSQL": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["Database"],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "MongoDB": {
+      "difficulty": "Beginner",
+      "duration_weeks": 2,
+      "prerequisites": ["NoSQL"],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "PostgreSQL": {
+      "difficulty": "Beginner",
+      "duration_weeks": 2,
+      "prerequisites": ["SQL"],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "MySQL": {
+      "difficulty": "Beginner",
+      "duration_weeks": 2,
+      "prerequisites": ["SQL"],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "Redis": {
+      "difficulty": "Beginner",
+      "duration_weeks": 1,
+      "prerequisites": [],
+      "resource_types": ["Documentation", "Course"]
+    },
+    "Cybersecurity": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 6,
+      "prerequisites": ["Networking"],
+      "resource_types": ["Course", "Hands-on Lab", "Book"]
+    },
+    "Penetration Testing": {
+      "difficulty": "Advanced",
+      "duration_weeks": 6,
+      "prerequisites": ["Cybersecurity", "Networking"],
+      "resource_types": ["Hands-on Lab", "Course"]
+    },
+    "Network Security": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 5,
+      "prerequisites": ["Networking"],
+      "resource_types": ["Course", "Hands-on Lab"]
+    },
+    "Incident Response": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["Cybersecurity"],
+      "resource_types": ["Course", "Hands-on Lab"]
+    },
+    "SIEM": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["Cybersecurity"],
+      "resource_types": ["Course", "Hands-on Lab"]
+    },
+    "Networking": {
+      "difficulty": "Beginner",
+      "duration_weeks": 3,
+      "prerequisites": [],
+      "resource_types": ["Course", "Hands-on Lab"]
+    },
+    "TCP/IP": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 3,
+      "prerequisites": ["Networking"],
+      "resource_types": ["Course", "Book"]
+    },
+    "VPN": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 2,
+      "prerequisites": ["Networking", "Network Security"],
+      "resource_types": ["Course", "Hands-on Lab"]
+    },
+    "Firewalls": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 2,
+      "prerequisites": ["Networking", "Network Security"],
+      "resource_types": ["Course", "Hands-on Lab"]
+    },
+    "Mobile Development": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 6,
+      "prerequisites": [],
+      "resource_types": ["Course", "Hands-on Project"]
+    },
+    "iOS": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 5,
+      "prerequisites": ["Mobile Development"],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "Android": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 5,
+      "prerequisites": ["Mobile Development"],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "React Native": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["Mobile Development", "JavaScript"],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "Flutter": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["Mobile Development"],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "Game Development": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 6,
+      "prerequisites": [],
+      "resource_types": ["Course", "Hands-on Project"]
+    },
+    "Unity": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 5,
+      "prerequisites": ["Game Development"],
+      "resource_types": ["Course", "Hands-on Project"]
+    },
+    "Unreal Engine": {
+      "difficulty": "Advanced",
+      "duration_weeks": 6,
+      "prerequisites": ["Game Development"],
+      "resource_types": ["Course", "Hands-on Project"]
+    },
+    "UI Design": {
+      "difficulty": "Beginner",
+      "duration_weeks": 3,
+      "prerequisites": [],
+      "resource_types": ["Course", "Hands-on Project"]
+    },
+    "UX Research": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": [],
+      "resource_types": ["Course", "Hands-on Project"]
+    },
+    "Figma": {
+      "difficulty": "Beginner",
+      "duration_weeks": 1,
+      "prerequisites": [],
+      "resource_types": ["Course", "Hands-on Project"]
+    },
+    "Wireframing": {
+      "difficulty": "Beginner",
+      "duration_weeks": 1,
+      "prerequisites": [],
+      "resource_types": ["Course", "Hands-on Project"]
+    },
+    "Prototyping": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 3,
+      "prerequisites": ["Wireframing", "UI Design"],
+      "resource_types": ["Course", "Hands-on Project"]
+    },
+    "Design Systems": {
+      "difficulty": "Advanced",
+      "duration_weeks": 5,
+      "prerequisites": ["UI Design", "Prototyping"],
+      "resource_types": ["Course", "Book"]
+    },
+    "Product Management": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 6,
+      "prerequisites": [],
+      "resource_types": ["Course", "Book"]
+    },
+    "Business Analysis": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 5,
+      "prerequisites": [],
+      "resource_types": ["Course", "Book"]
+    },
+    "Agile": {
+      "difficulty": "Beginner",
+      "duration_weeks": 2,
+      "prerequisites": [],
+      "resource_types": ["Course", "Book"]
+    },
+    "Jira": {
+      "difficulty": "Beginner",
+      "duration_weeks": 1,
+      "prerequisites": [],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "Roadmapping": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 3,
+      "prerequisites": ["Product Management"],
+      "resource_types": ["Course", "Book"]
+    },
+    "Communication": {
+      "difficulty": "Beginner",
+      "duration_weeks": 3,
+      "prerequisites": [],
+      "resource_types": ["Book", "Workshop"]
+    },
+    "Leadership": {
+      "difficulty": "Advanced",
+      "duration_weeks": 6,
+      "prerequisites": ["Communication"],
+      "resource_types": ["Book", "Workshop"]
+    },
+    "Problem Solving": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": [],
+      "resource_types": ["Course", "Book", "Practice Problems"]
+    },
+    "Teamwork": {
+      "difficulty": "Beginner",
+      "duration_weeks": 2,
+      "prerequisites": [],
+      "resource_types": ["Workshop", "Book"]
+    },
+    "Research": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": [],
+      "resource_types": ["Course", "Book"]
+    },
+    "Critical Thinking": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": [],
+      "resource_types": ["Course", "Book"]
+    },
+    "Adaptability": {
+      "difficulty": "Beginner",
+      "duration_weeks": 2,
+      "prerequisites": [],
+      "resource_types": ["Workshop", "Book"]
+    },
+    "Testing": {
+      "difficulty": "Beginner",
+      "duration_weeks": 3,
+      "prerequisites": [],
+      "resource_types": ["Course", "Hands-on Project"]
+    },
+    "Test Automation": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["Testing", "Python"],
+      "resource_types": ["Course", "Hands-on Project"]
+    },
+    "Selenium": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 3,
+      "prerequisites": ["Test Automation"],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "Performance Testing": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 3,
+      "prerequisites": ["Testing"],
+      "resource_types": ["Course", "Hands-on Project"]
+    },
+    "Security Testing": {
+      "difficulty": "Advanced",
+      "duration_weeks": 4,
+      "prerequisites": ["Testing", "Cybersecurity"],
+      "resource_types": ["Course", "Hands-on Lab"]
+    },
+    "Java": {
+      "difficulty": "Beginner",
+      "duration_weeks": 5,
+      "prerequisites": [],
+      "resource_types": ["Course", "Book"]
+    },
+    "JavaScript": {
+      "difficulty": "Beginner",
+      "duration_weeks": 4,
+      "prerequisites": [],
+      "resource_types": ["Course", "Hands-on Project"]
+    },
+    "C++": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 6,
+      "prerequisites": [],
+      "resource_types": ["Course", "Book"]
+    },
+    "C#": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 5,
+      "prerequisites": [],
+      "resource_types": ["Course", "Book"]
+    },
+    "Go": {
+      "difficulty": "Beginner",
+      "duration_weeks": 3,
+      "prerequisites": [],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "Rust": {
+      "difficulty": "Advanced",
+      "duration_weeks": 6,
+      "prerequisites": [],
+      "resource_types": ["Book", "Course"]
+    },
+    "TypeScript": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 3,
+      "prerequisites": ["JavaScript"],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "Scala": {
+      "difficulty": "Advanced",
+      "duration_weeks": 5,
+      "prerequisites": ["Java"],
+      "resource_types": ["Course", "Book"]
+    },
+    "React": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["JavaScript"],
+      "resource_types": ["Course", "Documentation", "Hands-on Project"]
+    },
+    "Angular": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["JavaScript", "TypeScript"],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "Vue.js": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 3,
+      "prerequisites": ["JavaScript"],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "Node.js": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 3,
+      "prerequisites": ["JavaScript"],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "Django": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["Python"],
+      "resource_types": ["Course", "Documentation", "Hands-on Project"]
+    },
+    "Flask": {
+      "difficulty": "Beginner",
+      "duration_weeks": 2,
+      "prerequisites": ["Python"],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "Spring": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 5,
+      "prerequisites": ["Java"],
+      "resource_types": ["Course", "Documentation"]
+    },
+    "PyTorch": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["Python", "Deep Learning"],
+      "resource_types": ["Course", "Documentation", "Hands-on Project"]
+    },
+    "TensorFlow": {
+      "difficulty": "Intermediate",
+      "duration_weeks": 4,
+      "prerequisites": ["Python", "Deep Learning"],
+      "resource_types": ["Course", "Documentation", "Hands-on Project"]
+    },
+    "Keras": {
+      "difficulty": "Beginner",
+      "duration_weeks": 2,
+      "prerequisites": ["Python", "Machine Learning"],
+      "resource_types": ["Course", "Documentation"]
+    }
+  },
+  "difficulty_levels": ["Beginner", "Intermediate", "Advanced"],
+  "default_spec": {
+    "difficulty": "Intermediate",
+    "duration_weeks": 4,
+    "prerequisites": [],
+    "resource_types": ["Course", "Documentation"]
+  }
+}
